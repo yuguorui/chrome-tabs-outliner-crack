@@ -1,0 +1,533 @@
+label, input {
+    vertical-align: middle;
+    display: inline;
+}
+
+li {
+    padding-bottom: 0.6em;
+}
+
+h1 {
+    color: #262626;
+}
+
+h2 {
+    color: #6B6B6B;
+    border-bottom: 1px solid lightgray;
+}
+
+h3 {
+    color: #6B6B6B;
+}
+
+.option-comment {
+    border-left:  1px solid lightgray;
+    margin-left:  29px;
+    padding-left: 11px;
+}
+
+.backupsList {
+    border: 1px solid lightgray;
+    padding: 3px 3px;
+    height: 6em;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    box-sizing: border-box;
+}
+.backupsList table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.backupsList table td {
+    padding: 0px;
+    margin: 0px;
+    line-height: 20px;
+}
+.backupsList table tr > td:first-of-type {
+    width: 100%;
+    padding-left:6px;
+}
+.backupsList table tr > td:last-of-type {
+    padding-right:6px;
+    padding-left:1px;
+}
+.backupsListEntry:hover {
+    background-color: hsl(208, 85%, 78%);
+    cursor: pointer;
+}
+.backupsListEntry {
+    padding-left: 6px; // This is for  messages like "No Backup files Left" that is rendered in <div> inside table with this class
+}
+
+
+/* Indentity access problems warning messages - BEG ------------------------------------------------------------------*/
+#headerWarningMessageArea {
+    display: block;
+    width: 780px; /*on changes also change this value for .tabs, it's = .tabs:width+.tab-content:padding*2*/
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -26px;
+    margin-top: 4px;
+}
+#headerWarningMessageArea:empty {
+    height: 21px;
+}
+.identityAccessWarningsMessageArea {
+  display: block;
+  padding: 0px;
+  padding-top: 2px;
+  margin-top: 11px;
+  margin-bottom: 14px;
+}
+.mainViewMessage {
+  background-color: #5890ff;
+  border: 1px solid #5890ff;
+  -webkit-border-radius: 3px;
+  overflow: hidden;
+  padding: 0 0 0 40px;
+  word-wrap: break-word;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  color: #141823;
+  line-height: 1.28;
+  text-align: left;
+}
+.mainViewMessage + .mainViewMessage {
+  margin-top: 2px;
+}
+.mainViewMessage[type='warning'] {
+  background-color: #FFB758;
+  border: 1px solid #FFB758;
+}
+.mainViewMessage[type='error'] {
+  background-color: crimson;
+  border: 1px solid crimson;
+}
+.mainViewMessageIcon {
+  width: 18px;
+  height: 18px;
+  color: #141823;
+  line-height: 1.28;
+  margin: 0;
+  padding: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: left;
+  margin: 9px 0 0 -29px;
+}
+.mainViewMessage[type='info'] > .mainViewMessageIcon {
+  background-image: url(/img/messages/info_icon.png);
+}
+.mainViewMessage[type='warning'] > .mainViewMessageIcon {
+  background-image: url(/img/messages/warning_icon.png);
+}
+.mainViewMessage[type='error'] > .mainViewMessageIcon {
+  background-image: url(/img/messages/warning_icon.png);
+}
+.mainViewMessageRemoveBtn {
+  background-image: url(/img/messages/close.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -187px;
+}
+.mainViewMessageRemoveBtn:hover {
+  background-image: url(/img/messages/close.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -200px;
+  text-decoration: none;
+}
+.mainViewMessageRemoveBtn:active,
+.mainViewMessageRemoveBtn {
+  background-image: url(/img/messages/close.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -13px -187px;
+}
+.mainViewMessageRemoveBtn {
+  float: right;
+  margin: 12px 12px 0 0;
+}
+.mainViewMessageRemoveBtn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mainViewMessageRemoveBtn {
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+  font-size: 0 !important;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+}
+.mainViewMessageRemoveBtn {
+  height: 12px;
+  width: 12px;
+}
+a.mainViewMessageRemoveBtn {
+  color: #3b5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mainViewMessageBody {
+  background: #fff;
+  margin: 0;
+  padding: 9px 30px 9px 10px;
+  word-wrap: break-word;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #141823;
+  line-height: 1.28;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+}
+.mainViewMessage[type='gopro'] {
+  overflow: visible;
+  background-color: black;
+  border: none;
+  padding: 13px 13px;
+  padding-left: 14px;
+  position: relative;
+}
+.mainViewMessage[type='gopro'] .mainViewMessageRemoveBtn {
+  position: absolute;
+  top: 0px;
+  right: 1px;
+}
+/* Indentity access problems warning messages - END ------------------------------------------------------------------*/
+
+
+/* Modal Edit - BEG -------------------------------------------------------------------------------------------------- */
+.modal-bg {
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    bottom: 0;
+    /*background: rgba(190, 81, 81, 0.1);*/
+
+    z-index: 95; /*чтоб выше hovering menu и main toolbar*/
+}
+.modal {
+   position: fixed;
+   left:10px;
+   right:10px;
+
+   top:50%;
+   margin-top:-75px;
+
+   background: #F6F5F3; /*F9F2EB;*/
+
+   border-radius: 2px;
+
+   padding: 20px;
+
+   box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.45);
+   border: 1px solid #929AB4;
+
+   z-index: 100; /*чтоб выше hovering menu*/
+}
+.modal .form_input[type="text"] {
+   border: solid 1px rgb(184, 185, 185);
+   padding: 4px;
+   display: block;
+   width: 100%;
+
+   box-sizing: border-box;
+}
+/*
+.modal .form_input[type="text"]:focus {
+   border: solid 1px rgb(131, 160, 252);
+
+}
+*/
+.modal .form_btn {
+   /* background: #d3d3d3; */
+   border: solid 1px rgb(184, 185, 185);
+   box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+   border-radius: 2px;
+   width: 71px;
+   height:27px;
+   text-align: center;
+   vertical-align: middle;
+   float: right;
+   margin-left: 10px;
+   margin-top: 20px;
+   font-size: 12px;
+   color: rgb(66, 66, 66);
+   background: rgb(240, 240, 240);
+}
+
+.modal .btn_ok {
+  font-weight: bold;
+}
+.form_btn:hover {
+   background: #F5EAD6;
+}
+.form_btn:active {
+   background: rgb(221, 240, 217);
+}
+.form_btn:focus {
+   border: solid 1px rgb(131, 160, 252);
+}
+/* changes for options_enterlicensedialog.js */
+.modal {
+  left: 80px;
+  right: 80px;
+  padding: 11px 13px;
+  font-size: 16px;
+
+  position: fixed;
+  top: 50%;
+  transform: translateY(-40%);
+}
+
+.modal .form_btn_wide_centered {
+    display: block;
+    width: 500px;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal .form_input[type="text"] {
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+
+@-webkit-keyframes dimpage {
+    from {background: rgba(2, 5, 29, 0);}
+    to {background: rgba(2, 5, 29, 0.82);}
+}
+
+.modal-bg {
+  background: rgba(2, 5, 29, 0.82);
+  -webkit-animation: dimpage 0.1s;
+}
+
+#modalEditPrompt-editField {
+    -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+               box-sizing: border-box; /*fix the fact that width:100% actualy makes texarea 8 px wider*/
+    width:100%;
+}
+/* Modal Edit - END -------------------------------------------------------------------------------------------------- */
+/* Tabs - BEG -------------------------------------------------------------------------------------------------------- */
+
+/* $tabs-base-color: #8e44ad; */
+
+body {
+    background-color: #060D51;
+}
+
+html { overflow-y: scroll; } /* To prevent visual jumps during switching tabs that needs and not needs scrollbar*/
+
+.tabs {
+    padding: 0px;
+
+    width: 730px; /*on changes also change this value for #headerWarningMessageArea*/
+    float: none;
+    list-style: none;
+    position: relative;
+    left: -25px; /* center the tabs content on page, instead of the tab titles block, it's the tab content padding */
+    text-align: left;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 30px;
+
+}
+.tabs_li {
+    float: left;
+    display: block;
+    max-width: 220px;
+}
+
+
+.tabs_radio {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+.tablabel {
+    display: block;
+    padding: 11px 19px;
+    margin-right: 3px;
+    border-radius: 2px 2px 0 0;
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background: #d3d3d3;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+
+    -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+}
+.tablabel:hover {
+    background: #87cefa; /* on mouse hover tab highlight */
+}
+
+.tabs .tab-content{
+    z-index: 2;
+    display: none;
+    overflow: hidden;
+    width: 100%;
+    font-size: 17px;
+    line-height: 25px;
+    padding: 25px; /*on changes also change width value for #headerWarningMessageArea*/
+    position: absolute;
+    top: 52px; /*with 53 px we have a gap between tabs and content on Ubunta and if zoom applied to page*/
+    left: 0;
+    background: #ffffff; /* active tab background color */
+    margin-bottom: 37px
+}
+/*The Magic*/
+.tabs [id^="tab"]:checked + .tablabel {
+    top: 0;
+    padding-top: 15px;
+    background: #ffffff; /* active tab background color */
+}
+/* Displayed the content of checked tab */
+.tabs [id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+}
+
+
+/* Tabs - END -------------------------------------------------------------------------------------------------------- */
+html {
+    background: url(../img/backgrounds/black-Linen.png) repeat;
+}
+
+
+body {
+    margin: 0px;
+    padding: 0px;
+
+    background: url(../img/backgrounds/black-Linen.png) repeat;
+
+    /*
+    padding: 27px;
+    border: 1px solid lightgray;
+
+    border-radius: 8px;
+    */
+
+    font-size: 100%;
+}
+
+#buyLicenseKeyBtn-backup, #buyLicenseKeyBtn-pro, #enterLicenseKeyBtn {
+    width:100%;
+    font-size: 19px;
+    padding: 10px;
+
+    border: 1px solid hsl(0, 0%, 80%);
+
+    background-color: hsl(0, 0%, 80%);
+    border-color:     hsl(73, 91%, 45%);
+
+    border-radius: 3px;
+
+}
+#buyLicenseKeyBtn-backup, #buyLicenseKeyBtn-pro {
+    background-color: hsl(73, 91%, 54%);
+    border-color:     hsl(73, 91%, 45%);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#licenseKeyAbsentProTabBlock {
+    padding:15px;
+}
+
+
+.benefitslist td {
+    padding-bottom: 25px
+}
+.benefitslist tr:last-of-type td {
+    padding-bottom: 0px; /*для последнего ряда убираем отступ снизу*/
+}
+.benefitslist tr td:first-of-type {
+    text-align: center;
+    padding-right: 10px;
+}
+/*
+.benefitslist li {
+    margin-bottom: 26px;
+}
+
+.benefitslist li img{
+    vertical-align: middle;
+    margin-right: 7px;
+    margin-top: -5px; /*center image verticaly to text line*/
+}
+
+*/
+.buydialog {
+    padding: 17px 37px;
+    padding-bottom: 9px;
+}
+
+#backupNowBtn {
+    border-radius: 2px;
+    background-color: hsl(208, 85%, 78%);
+    border: 1px solid hsl(208, 85%, 65%);
+
+    color: #3A3A3A;
+    display: inline-block;
+    padding: 0px 8px 1px 8px;
+    line-height: 25px;
+
+    margin-top: 3px;
+
+    cursor:pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#backupNowBtn:hover {
+    background-color: hsl(208, 85%, 82%);
+    border: 1px solid hsl(208, 85%, 62%);
+}
+
+#backupNowBtn:active {
+    background-color: hsl(208, 85%, 90%);
+    border: 1px solid hsl(208, 85%, 65%);
+}
+
+#backupNowBtn.uploadInProgress {
+    background-color: white;
+}
+#backupNowBtn.uploadInProgress img {
+    position: relative;
+    top: 2px; /*центрируем спинер*/
+}
+
+.showMoreContent {
+    cursor: pointer;
+    color: #0415F3;
+    border-bottom: 1px dotted;
+    font-size: x-small;
+}
+
+button {
+    cursor: pointer;
+}

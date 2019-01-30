@@ -1,0 +1,18 @@
+=================================================================
+Privacy Policy
+=================================================================
+
+Tabs Outliner collect anonymous usage statistics, in agregated way and 
+without any personally identifiable information. So it technically will be
+impossible to identify you or in any way associate the usage statistic
+with your persona.
+
+The information that is collected contain frequency of usage
+of different Tabs Outliner features, and technical details like memory,
+CPU or disk utilizations during their usage. It's will be used to improve
+the product, its performance, better memory management and to discover
+and in advance resolve possible problems that might arise during Chrome
+updates.
+
+Collected information in no way contain the visited links,
+their titles or your notes.

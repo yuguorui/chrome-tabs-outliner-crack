@@ -1,0 +1,322 @@
+
+.buy-button-comment{
+    color: darkgray;
+}
+
+.status_box {
+    /*border: 1px solid #cccccc;*/
+    border-radius: 4px;
+    padding: 7px 0px 0px 0px;
+    margin-bottom: 6px;
+    box-shadow: 0px 0px 1px rgba(28, 27, 68, 0.38);
+    background: #fcfcfc;
+
+}
+.status_title {
+    text-align:center;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #E0E0E0;
+    font-size: larger;
+    font-weight: bold;
+}
+.status_body {
+    padding: 1em;
+    text-align:center;
+}
+
+.status_hiden {
+    display:none;
+}
+
+.detector_spiner {
+    display:inline-block;
+    margin: auto;
+}
+.popover {
+    max-width: 500px;
+    width: auto;
+    font-weight: normal;
+    font-size: small;
+    color: black;
+    text-shadow: none;
+}
+/*--------------------------------------------------------------*/
+
+.sidebar-nav {
+padding: 9px 0;
+}
+
+@media (max-width: 980px) {
+    /* Enable use of floated navbar text */
+    .navbar-text.pull-right {
+      float: none;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+}
+
+.navbar .brand {
+    padding-left: 34px;
+}
+
+.container-narrow {
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.footer_links a {
+   text-decoration: underline;
+}
+
+.footer_links {
+   text-align:center;
+   margin:0px; /*anulate bootstrap marging for ul*/
+}
+
+.footer_inner {
+    padding: 0.5em;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    min-height: 0;
+}
+
+ .footer {
+    color: #8c8c8c;
+    font-size: 11px;
+    padding: 10px 10px;
+}
+
+.footer a {
+    color: #3B4B53;
+}
+
+/* Override too blured shadow from bootstrap.css*/
+.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+    -webkit-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    -moz-box-shadow: 0 1px 5px rgba(0,0,0,.1);
+    box-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+
+html,
+body {
+height: 100%;
+/* The html and body elements cannot have any padding or margin. */
+background: #f4f4f4;
+color: #333333;
+font: 14px/22px "Helvetica Neue",Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+min-height: 100%;
+height: auto !important;
+height: 100%;
+/* Negative indent footer by it's height */
+margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+height: 60px;
+}
+#footer {
+background-color: #f5f5f5;
+}
+
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+  margin-left: -20px;
+  margin-right: -20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+}
+
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+
+#wrap > .container-narrow {
+padding-top: 60px;
+}
+.container .credit {
+margin: 20px 0;
+}
+/*--------------------------------------------------------------*/
+/* http://cssload.net/ */
+ #floatingCirclesG{
+position:relative;
+width:40px;
+height:40px;
+-moz-transform:scale(0.6);
+-webkit-transform:scale(0.6);
+-ms-transform:scale(0.6);
+-o-transform:scale(0.6);
+transform:scale(0.6);
+}
+
+.f_circleG{
+position:absolute;
+background-color:#FCFCFC;
+height:7px;
+width:7px;
+-moz-border-radius:4px;
+-moz-animation-name:f_fadeG;
+-moz-animation-duration:1.44s;
+-moz-animation-iteration-count:infinite;
+-moz-animation-direction:linear;
+-webkit-border-radius:4px;
+-webkit-animation-name:f_fadeG;
+-webkit-animation-duration:1.44s;
+-webkit-animation-iteration-count:infinite;
+-webkit-animation-direction:linear;
+-ms-border-radius:4px;
+-ms-animation-name:f_fadeG;
+-ms-animation-duration:1.44s;
+-ms-animation-iteration-count:infinite;
+-ms-animation-direction:linear;
+-o-border-radius:4px;
+-o-animation-name:f_fadeG;
+-o-animation-duration:1.44s;
+-o-animation-iteration-count:infinite;
+-o-animation-direction:linear;
+border-radius:4px;
+animation-name:f_fadeG;
+animation-duration:1.44s;
+animation-iteration-count:infinite;
+animation-direction:linear;
+}
+
+#frotateG_01{
+left:0;
+top:16px;
+-moz-animation-delay:1.8s;
+-webkit-animation-delay:1.8s;
+-ms-animation-delay:1.8s;
+-o-animation-delay:1.8s;
+animation-delay:1.8s;
+}
+
+#frotateG_02{
+left:5px;
+top:5px;
+-moz-animation-delay:1.62s;
+-webkit-animation-delay:1.62s;
+-ms-animation-delay:1.62s;
+-o-animation-delay:1.62s;
+animation-delay:1.62s;
+}
+
+#frotateG_03{
+left:16px;
+top:0;
+-moz-animation-delay:1.44s;
+-webkit-animation-delay:1.44s;
+-ms-animation-delay:1.44s;
+-o-animation-delay:1.44s;
+animation-delay:1.44s;
+}
+
+#frotateG_04{
+right:5px;
+top:5px;
+-moz-animation-delay:1.26s;
+-webkit-animation-delay:1.26s;
+-ms-animation-delay:1.26s;
+-o-animation-delay:1.26s;
+animation-delay:1.26s;
+}
+
+#frotateG_05{
+right:0;
+top:16px;
+-moz-animation-delay:1.08s;
+-webkit-animation-delay:1.08s;
+-ms-animation-delay:1.08s;
+-o-animation-delay:1.08s;
+animation-delay:1.08s;
+}
+
+#frotateG_06{
+right:5px;
+bottom:5px;
+-moz-animation-delay:0.9s;
+-webkit-animation-delay:0.9s;
+-ms-animation-delay:0.9s;
+-o-animation-delay:0.9s;
+animation-delay:0.9s;
+}
+
+#frotateG_07{
+left:16px;
+bottom:0;
+-moz-animation-delay:0.72s;
+-webkit-animation-delay:0.72s;
+-ms-animation-delay:0.72s;
+-o-animation-delay:0.72s;
+animation-delay:0.72s;
+}
+
+#frotateG_08{
+left:5px;
+bottom:5px;
+-moz-animation-delay:0.54s;
+-webkit-animation-delay:0.54s;
+-ms-animation-delay:0.54s;
+-o-animation-delay:0.54s;
+animation-delay:0.54s;
+}
+
+@-moz-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FCFCFC}
+
+}
+
+@-webkit-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FCFCFC}
+
+}
+
+@-ms-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FCFCFC}
+
+}
+
+@-o-keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FCFCFC}
+
+}
+
+@keyframes f_fadeG{
+0%{
+background-color:#000000}
+
+100%{
+background-color:#FCFCFC}
+
+}

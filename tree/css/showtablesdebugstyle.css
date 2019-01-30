@@ -1,0 +1,42 @@
+
+body {
+	background-color:#CC33CC
+}
+
+td {
+ padding:2px;
+ border:2px dotted #000;
+}
+
+table {
+ border:3px  #533E17 solid;
+ /* border-collapse:collapse;*/
+ margin:3px;
+}
+
+
+/* Debug Backgrounds
+.rellinecell {
+    background-color: #FFDBA8;
+}
+
+.rellinestartcell {
+    background-color: #099;
+}
+
+.subnodeslist {
+    background-color: #0F3;
+}
+
+.node {
+    background-color: #3E3;
+}
+
+.nodecell {
+    background-color: #0C9;
+}
+
+.subnodeslink {
+    background-color: #098;
+}
+*/

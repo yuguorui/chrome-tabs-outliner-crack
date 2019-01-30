@@ -1,0 +1,515 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<!-- Copyright 2012 Vladyslav Volovyk -->
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <link rel="shortcut icon" href="img/favicon.png">
+    <title>Tabs Outliner Options</title>
+</head>
+<link href="tree/css/options.css" rel="stylesheet" type="text/css" />
+
+
+<body>
+<div id=headerWarningMessageArea></div>
+<ul class="tabs">
+    <li class="tabs_li">
+        <input type="radio" name="tabs" id="tab-pro" class="tabs_radio" checked/>
+        <label for="tab-pro" class="tablabel">Paid Features</label>
+        <div id="tab-content1" class="tab-content">
+            <div id="licenseKeyAbsentProTabBlock">
+                        
+                     <h1 style="text-align: center;">Upgrade to Paid Mode</h1>
+
+
+                     <p style='text-align: center;margin-bottom: 26px;'>Paid features include:</p>
+
+                <table class=benefitslist>
+                    <tr><td><img src="img/options/pro_tab/keys.png"/></td><td>Complete keyboard support for all actions along with global Chrome keyboard shortcuts
+                        for opening Tabs Outliner and for hibernating current tab or window.</td></tr>
+                    <tr><td><img src="img/options/pro_tab/clipboard.png"/></td><td>Clipboard operations for tree manipulation, pasting notes, exporting hierarchies
+                    to and from plain text. That's enable possibility to quickly share hierarchies through Skype chat for example.</td></tr>
+                    <!--<tr><td><img src="img/options/pro_tab/lamp.png"/></td><td>Small enhancements like: inline notes for tabs, tooltips with full text for long notes,
+                    better import/export capabilities.</td></tr>-->
+                    <tr><td><img src="img/options/pro_tab/cloud.png"/></td><td>Google Drive backups of the tree created automatically every 24 hours, or manually at anytime.
+                    These backups will also enable remote access to your data, as they can be viewed on any PC where you logged-in to your Chrome profile.</td></tr>
+                    <tr><td><img src="img/options/pro_tab/disketa.png"/></td><td>Local backup snapshots automatically created much more often then Google Drive backups (several times per hour) - a way to recover
+                    from accidental deletions of data created in the tree after the last Google Drive backup.</td></tr>
+                  <!--  <li><img alt='[History? / Undo] '/>Access to  history of changes in the tree, wich in turn will enable a simply way to undone
+                  of acidental deletions and edits. This can also provide many insights of where the time and attention goes through the days. -->
+                    <tr><td><img src="img/options/pro_tab/progress.png"/></td><td>Development of new features and the project progress. Paid users will
+                    be provided by special means to set development priorities for new features and priority support.</td></tr>
+                </table>
+                    
+
+                     <br style="clear: both;" />
+                     <p style="margin-top: 1px; margin-bottom: -8px;">
+                     You can check available in the Paid Mode keyboard shortcuts and additional commands by invoking the context menu of any node in the tree.
+                     The backup features can be reviewed there on the Backup tab.
+                     <p>
+                     Your purchase will fund one additional hour of work (based on an hourly rate of a developer in Ukraine - the country of Tabs Outliner origin)
+                     toward new features, bug fixes and enhancements we are all waiting for.
+                     <p>
+                     Tags with autocompletion, custom styles, node's icons,
+                     multi-select, undo, better and richer notes, better search, real-time backup of all changes, fully synchronized remote editing, mobile access - your money will
+                     go directly in the development of all of this. And first of all - in the ongoing architecture rewrite that must hugely improve performance and memory
+                     management within the big trees.
+                     <p>
+                     Future development of this tool depends on your support.
+                     <p>
+                     <p>
+                     <div id=identityAccessWarningsMessageArea-Pro class=identityAccessWarningsMessageArea></div>
+                     <button id="buyLicenseKeyBtn-pro" class="option-values">Buy Paid Mode License Key</button>
+                     <!--<button id="enterLicenseKeyBtn" class="option-values">Enter already owned Pro License Key</button>-->
+
+                     <br>
+                     <!--<br>
+                     <button id="register-pro-mode-ext-identity" class="option-values">Register using a email that differs of the current Chrome profile email or in case Chrome is not logged on and you did not want to login it (process require online identity check and granting special permissions to extension, this is need only for very special cases and it's recomended to use standart Chrome way trhrough logged in profile to confirm registration email).</button>
+                     <div style="border-left:1px solid lightgray; margin-left: 30px; padding-left: 7px">
+                        Note (will appear in modal dialog): you need to buy license first using the Chrome profile tied to the registration email. If you dont whant to
+                        login your default Chrome profile to this registration email you can temporary create new fresh profile, setup Tabs Outliner in it and buy a license
+                        there. Then delete this temporary profile and use this email to register all your other instances of Tabs Outliner.
+                     </div>
+                     -->
+
+
+            </div>
+            <div id="licenseKeyValidProTabBlock">
+                <hr>
+                <b>License Status</b>: Paid Mode License Key Present. Key registered to <span name="licensee">Undefined</span>.
+                <p>
+                All features are enabled.
+                </p>
+                <p>
+                Thank You for your support!
+                </p>
+                <hr>
+            </div>
+            <div id="licenseKeyNotMatchUserIdentityProTabBlock">
+                <hr>
+                <b>License Status</b>: Paid Mode License Key Present. Key registered to <span name="licensee">Undefined</span>.
+                <p>
+                Warning: Current Chrome profile email does not match present Paid Mode License Key.<br>
+                Possible reason - you are Signed in to Chrome using an another email or applied License Key Is Invalid.
+                </p>
+                <p>
+                Paid features are disabled.
+                </p>
+                <p>
+                Please, Sign in to Chrome using the identity that was used to generate Paid Mode License Key or apply Paid Mode License Key
+                corresponded to the current Chrome profile email, to enable them again.
+                </p>
+                <p>
+
+                <button id="dropInvalidLicenseKey" class="option-values">Drop Invalid License Key & Switch To Purchase Screen</button><br>
+
+                </p>
+                <hr>
+            </div>
+            <div id="licenseKeyPresentButChromeIsNotSignedInProTabBlock">
+                <hr>
+                <b>License Status</b>: Paid Mode License Key Present. Application registered to <span name="licensee">Undefined</span>.
+                <p>
+                Warning. Chrome is not Signed in. Automatic backup and license key validation is not possible.
+                </p>
+                <p>
+                Paid features are disabled.
+                </p>
+                <p>
+                Please <button id=signInToChromeBtn_keyPresentBlock>Sign In to Chrome</button> to enable them again.
+                </p>
+                <hr>
+            </div>
+            <div id="licenseKeyPresentButEmailPermissionIsNotGrantedProTabBlock">
+                <hr>
+                <b>License Status</b>: Paid Mode License Key Present. Application registered to <span name="licensee">Undefined</span>.
+                <p>
+                Warning. Permission to access current Chrome profile email is not granted. Email is not accessible. License Key cannot be validated.
+                </p>
+                <p>
+                Paid features are disabled.
+                </p>
+                <p>
+                <span style="font-weight: bold; color:green;">Please, allow email access to enable them.</span> Note that your Chrome profile email will not be transfered outside of this computer.
+                </p>
+                <p>
+                <button id="allowEmailAccessBtn-pro" class="option-values">Allow Chrome Profile Email Access</button>
+                </p>
+                <hr>
+            </div>
+            <p style="text-align: center; color:gray">
+                For any questions contact <a href="mailto:support@tabsoutliner.com" style="
+                    color: gray;
+                    text-decoration: none;
+                    font-weight: bold;
+                ">support@tabsoutliner.com</a>
+            </p>
+            <div id=testButtonsBlock style="display: none">
+                <hr>
+                <button id="testNoIdentityEmailPermissionGrantedWarning" class="option-values">[Test] Show #no-identity.email-permission-granted warning.</button>
+                <button id="testNotSignedInToChromeWarning" class="option-values">[Test] Show #not-signed-in-to-chrome.</button>
+                <br>
+                <br>
+                <button id="test_setLicenseState_valid" class="option-values">[Test] setLicenseState_valid</button><br>
+                <button id="test_setLicenseState_invalidLicenseState_IncorectIdentity" class="option-values">[Test] setLicenseState_invalidLicenseState_IncorectIdentity</button><br>
+                <button id="test_setLicenseState_invalidLicenseState_KeyPresentButNoAccessToUserIdentity" class="option-values">[Test] setLicenseState_invalidLicenseState_KeyPresentButNoAccessToUserIdentity - revoke permission</button><br>
+                <button id="test_setLicenseState_invalidLicenseState_KeyPresentButNoAccessToUserIdentity2" class="option-values">[Test] setLicenseState_invalidLicenseState_KeyPresentButNoAccessToUserIdentity - just refresh - manual LogOut from Chrome first</button><br>
+                <button id="test_setLicenseState_invalidLicenseState_NoLicenseKey" class="option-values">[Test] setLicenseState_invalidLicenseState_NoLicenseKey</button><br>
+            </div>
+        </div>
+    </li>
+
+    <li class="tabs_li">
+        <input type="radio" name="tabs" class="tabs_radio" id="tab-backup" />
+        <label for="tab-backup" class="tablabel">Backup</label>
+        <div id="tab-content2" class="tab-content">
+            <div id="licenseKeyAbsentBackupTabBlock">
+                Automatic Google Drive backup feature and local snapshots are available to use only in the Paid Mode.
+                <p>
+                But you can invoke several Google Drive backups manually,  to test and see how they can be accessed.
+                <p>
+                <div id=identityAccessWarningsMessageArea-Backup class=identityAccessWarningsMessageArea></div>
+                <button id=enableTrialBackupBtn>Enable Google Drive Backup Controls</button>
+
+                <hr>
+
+                <p>
+                <img style='float:left; margin: 5px; margin-left: 0px; margin-right: 14px'alt='Accident' src='img/options/acident-elephant.png'/>Apart of losing your data
+                    because of possible hard disk fail, lost notebooks, thieves, fire,  flood, kids, terrorist attacks,
+                    unexpected revolution with the following war and so on,  the Chrome local storage (a place where
+                    Tabs Outliner stores the tree data in the Free Mode),  is very unreliable, and can be lost or cleared
+                    any moment for many different reasons,  most often during the Chrome automatic updates or sudden crash.
+                    You can find a lot of such stories in the reviews section of  any  Chrome extension that depend on a local storage.
+                <p>
+                So, if you even slightly value your data, please Upgrade to the Paid Mode and enable automatic backup. They save you from a lot of troubles and worries,
+                and, what's more important, without your payments we will not be able to move the project forward on its father progress.
+                <p>
+                <h3>Backup features that will be available in the Paid Mode</h3>
+                <ul>
+                <li>Automaticaly performed once per day backup of the tree to your Google Drive account.
+                <li>Possibility to initiate Google Drive backup manually at any time.
+                <li>Local snapshots of the tree created automatically every 5-15 minutes, for restoring deleted hierarchies or windows created after the last Google drive backup.
+                <li>Backup files will also be possible to open remotely, from any Tabs Outliner instance installed in your
+                    Chrome Profile. Then drag and drop hierarchies from them to the main tree for import or reopen some
+                    links directly from the backup. 
+                </ul>
+                <p>
+                Note that Google Drive backups enable some form of remote access to your data. Yet it's not the final point,
+                fully synchronized in both directions and real-time implementation, which will replace all of this different
+                type of backups, is still planned and in development now.
+                <p>
+                Worth to note that backups created by Tabs Outliner do not pass through any of our transit servers (in contrast with
+                many other similar tools) and goes directly into your Google Drive Account. So your private information stays private.
+                <p>
+                <button id="buyLicenseKeyBtn-backup" class="option-values">Buy Paid Mode License Key - Fund The Ongoing Development</button>
+            </div>
+            <div id="licenseKeyPresentBackupTabBlock">
+                <h2>Google Drive Backups</h2>
+                <div id=trialModeBackupWarning><b>Automatic daily backup currently disabled.</b> In the trial mode you can initiate a backup manually for several times. Trial backups also accessible to view only from the same Tabs Outliner instance that created them. To access them from other PC you need to upgrade to the Paid Mode.</div>
+                <p>
+                <div id="authorizeDiv" style="margin-bottom: 12px;">
+                <button id="authorizeButton">Authorize Tabs Outliner to store backup data on your Google Drive</button><br>
+                <div>After Authorization you will be able to perform Manual Backup. And in the Paid Mode Tabs Outliner starts back up your tree automatically once each day.</div>
+                </div>
+                <div class="backupsList" id="gdriveBackupsList"><table id="gdriveBackupsListTable"><tr><td><img class="ajax-icon" src="/img/loading_chrome.gif"/>Requesting backups list from Google Drive...</td></tr></table></div>
+                <p>
+                <div style="display: table; width: 100%;"> <!-- Put everything on one line and occupay all remaining space for input element -->
+                    <span style="white-space: nowrap; display: table-cell;">Add label to backup files from this machine (for example: work, home):</span>
+                    <span style="display: table-cell;width: 100%; padding: 0px 4px 0px 6px;">
+                        <input type="text" style="width: 100%" id="machineLabel"/>
+                    </span>
+                </div>
+                <p>
+                Keep last <input id=numberOfBackupsOnGdriveToKeep type="number" min="1" max="10000" step="1"/> backup files.
+                <p>
+                <div><input type="checkbox" id="showBackupNowBtn"> <label for="showBackupNowBtn">Show Backup Now Button in the Main Toolbar.</label></div>
+                <div class="option-comment">
+                    This option will add a Backup Now button to the Main Toolbar. 
+                    <p>Automatic backup created only once in 24 hours, so the very last changes will not be backed up. Backup Now Button allow to create Google Drive backup of the tree at anytime, for example when you go from work to home. To ensure that all the latest changes in the tree will be available for review remotely, from other instances of Tabs Outliner.
+                    <p><div>
+                        <img src="../../img/options/backup_now_btn_illustration.png" alt="Backup Now Btn" style="
+                                                                                    vertical-align: middle;
+                                                                                    margin-bottom: 6px;
+                                                                                    margin-left: -2px;
+                                                                                    margin-right: 10px;
+                                                                                    margin-top: 2px;
+                                                                                    float: left;
+                        "/>
+
+                        <div  style="line-height: 19px; padding-top: 2px;">
+                            Color strip indicator at the bottom will show status of the last backup:
+                            <table>
+                            <tr><td><img src="../../img/options/backup-succeded-status.png" style="margin-bottom: -4px;"/></td><td>-</td><td>last backup attempt succeeded</td></tr>
+                            <tr><td><img src="../../img/options/backup-failed-status.png"   style="margin-bottom: -4px;"/></td><td>-</td><td>last backup attempt failed</td></tr>
+                            <tr><td><img src="../../img/options/backup-noatempt-status.png" style="margin-bottom: -4px;"/></td><td>-</td><td>there was no backup attempt since last Chrome restart</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    
+                    <div style="clear:both"></div>
+
+                </div>
+
+                <h2>Local Backups</h2>
+                <div class="backupsList"><table id="localBackupsListTable"></table></div>
+                <p>
+                Local backup snapshots created much more often then Google Drive daily backups. They are useful to restore
+                accidentally deleted hierarchies or unintentionaly closed windows, created in the tree after the last daily backup.
+
+                <h2>Export</h2>
+                <button id="exportToFile" class="option-values">Export Tree To File</button>
+                <div id=exporteBlobUrl></div>
+                View Exported Tree: <input type="file" id="viewExportedFile" accept=".tree"/>
+
+                
+                <!--<p>
+                    Open exported file in Chrome browser as any other HTML file. Exported tree includes the content of 
+                    collapsed nodes (legacy Ctrl-S export available in the Free Mode export only visible nodes).
+                <p>-->
+                <p>
+                <b>Important tip for users with very big trees.</b> With very big tree (tens of thousands of nodes),
+                Tabs Outliner becomes slow and unresponsive. If you experience long pauses and slow operations,
+                it's recommended to export your tree to a file, to archive its content, and start from scratch,
+                with an empty tree, to restore normal performance.  <span class="showMoreContent" name='tipForUserWithBigTree'>MORE...</span>
+
+                <div id="tipForUserWithBigTree" style='display:none'>
+                You can reset the tree by uninstalling Tabs Outliner and then installing it's again. Uninstall deletes all local data (but not the backups on Google Drive). Make sure you exported the older tree before uninstall, and, just to be safe, create a backup of it to Google Drive (this will also enable remote access to the older tree,  but take note that older backups become automatically deleted after reaching configured here maximum number of stored files). Also, please check that you can successfully open the exported file before uninstalling Tabs Outliner.
+                <p>
+                The problem with bad performance on big trees is one of the highest priorities to solve, and the whole Paid Mode was introduced to a great extent to be able to fund the architecture changes that will enable good performance with any amount of stored data.  But, just archiving the content and start from scratch can quickly solve this problem for you now.
+                <p>
+                We also plan to make possible import such exported files back as separate documents, to make trees in them editable again and enable access to them through Google Drive.
+                </div>
+
+                <h2>Tips</h2>
+                <ul>
+                <li>To import back hierarchies from Backup or Exported File, Drag&Drop them (the hierarchies) to the main Tabs Outliner window.
+                    You can import the whole tree by dragging its root node.
+                    So, for example, to restore a complete tree from a backup, into the fresh instance of Tabs Outliner
+                    on a new PC, drag and drop the root node of the backed up tree, from the Backup View,
+                    into the Tabs Outliner's Main Window.
+
+                <li>Links can be opened directly from Backup View with Ctrl-Click (Middle-Click) or Shift-Click, as Backup view is just an a regular HTML page.
+                (This shortcuts also works in Main View).
+
+                <li>To <b>delete all</b> Tabs Outliner backup files from Google Drive or check ocupied by them space:
+                <ol>
+                  <li>Go to <a href="https://drive.google.com" target="_blank">drive.google.com</a>.</li>
+                  <li>In the top right, click the settings icon <img src="./img/cog.png"
+                      style="margin-top: -17px; margin-bottom: -7px;"                  height="auto">.</li>
+                  <li>Select <strong>Settings</strong>.</li>
+                  <li>Choose <strong>Manage Apps</strong>.</li>
+                  <li>Find Tabs Outliner entry. All backup data can be deleted using the Options drop down menu of Tabs Outliner's entry.</li>
+                </ol>
+                </ul>
+                <!--
+                <h2>Realtime Cloud Backup</h2>
+
+                <b>Under construction.</b>
+                <p>
+                A few words about all of this different backup modes and why it’s done the way it’s done.
+                <p>
+                Google Drive automatic backups cannot be created meantime more often than once per day because of the
+                quotas exposed by Google Drive on Tabs Outliner (and any other) extension. To overcome this limitations
+                and to be able to restore incidental deletions of the items created in the tree AFTER the last daily backup (which
+                hapens only once per 24 hours) there is Local Backups, which happens more often.
+                And also the Backup Now functionality to manualy initiates snd save backup of the current
+                tree, with all the recent changes, to the Google Drive.
+                <p>
+                Backup Now feature enables possibility to access remotely the very last changes in the tree. Automatic backup functionality
+                performs backup once per 24 hours and thus the latest automatic backup will unlikely contain the most recent changes.
+                For example, when you go from work to home and want ensure that you have the latest copy of
+                the tree on the Google Drive, to be able to review it from home (and, soon, from mobile devices) you need to
+                press Backup Now before leaving your office to store the latest tree on your Google Drive and to be able view it from home.
+                <p>
+                But of course all of this is not as handy as it can be. It will be much better not to keep in mind that you need
+                to press Backup Now before going to home.
+                For this all changes must be automatically transmited to the cloud, continuously,
+                so the cloud copy will always be synchronized and up date.
+                We are working on this functionality, it’s largely done, but unfortunately still not
+                ready to be presented for a general public. Your payments is what will help finish it completely, along
+                with many other features.
+                This feature will also give possibility to “rewind” the tree to any point of the past, thus providing an alternative for Undo and
+                some insights of the browsing process through the past days and weeks.
+                <p>
+                But, as Realtime Cloud Backup feature will seriously utilize server side equipments, it most likely will require some subscription payments.
+                <p>
+                So, the current simple backup functionality, despite being somewhat "oldschool", have rights to exist and have own usefulness for users
+                who will prefer not to commit on any subscription payments, as it's still cover most of the problems with data loss for chrome extensions.
+                -->
+            </div>
+        </div>
+    </li>
+
+    <li class="tabs_li">
+        <input type="radio" name="tabs" class="tabs_radio" id="tab-general" />
+        <label for="tab-general" class="tablabel">General</label>
+        <div id="tab-content3" class="tab-content">
+
+            <div><input type="checkbox" id="oneClickToOpen"> <label for="oneClickToOpen">Single click to focus/restore tabs and windows (and also for everything else that require double click).</label> </div>
+            <div class="option-comment">
+                Many asks for this option, thus it is available, but it <b>not recomended</b> to enable it. That's why:
+                <p>
+                <ul>
+                <li >You will lose a possibility to select quickly (bring to front) already opened and partially visible Tabs Outliner window,
+                    by clicking almost anywhere inside it (as this will always result in some additional actions).
+
+                <li>One click navigation prone for accidental clicks, for example during drag and drop operations, and this might lead to a
+                    lot of undesirable consequences, like unintentional restoring of saved windows with many tabs and so on.
+
+                <li>It's not very friendly for keyboard operations (in Paid Mode), as to utilize them it's handy to have the ability to set
+                    keyboard cursor on any node just by clicking on it.
+
+                </ul>
+
+                Tabs Outliner is not aimed to replace the original Chrome's tab bar completely.
+                You actually will use the original Chrome's tabs bar to switch most of your tabs through the day.
+                So even without this feature tabs will be switched by a single click most of the time.
+                <p>
+                Tabs Outliner is useful for a better overview, more serious manipulations of tabs hierarchies, organizing saved windows, adding notes,
+                better handling of crashed sessions.
+                It's goal to be more a browsing notepad and information organizer, not just a simple tabs manager.
+                <p>
+                In the Paid Mode enabling this options also adds additional button to the node's hovering menu:
+                <img src="../../img/options/arrow_btn.png" style="display: block">
+                It's allow to set keyboard cursor on the selected node by mouse click.
+            </div>
+
+            <div><input type="checkbox" id="doNotAutoscroll"> <label for="doNotAutoscroll">Do not auto-scroll the main view on active Chrome window switch. </label> </div>
+            <div class="option-comment">
+                After disabling auto-scroll, you still be able to spotlight the current Chrome window in the Tabs Outliner's view
+                by pressing the Tabs Outliner's extension button
+                <img src="../../img/help_block/open_extension_btn.png" alt="close button" style="vertical-align: middle;
+                                        margin-bottom: -15px;
+                                                    margin-left: 2px;
+                                                    margin-right: 0px;
+                                                    margin-top: -15px;">
+                 - it will scroll the tree to display the current focused Chrome window and its tabs at the top of the Tabs Outliner's view.
+                <!--<p>
+                Small note. Disable autoscrolling is a real desire for many novice users.
+                But before you do so, maybe worth to try accustomize self with the auto-scroll feature.
+                For example take note that scroll does not happen if you select the window (or tab) from the
+                Tabs Outliner view, it happens only when you switch windows outside the Tabs Outliner.
+                Cloned views do not auto scroll at all. And there is also Undo Scroll button that can undo
+                all types of scrolls.
+                <p>
+                The Undo Scroll is actually useful not only to undone scrolls, exist two other handy use cases:
+                to scroll backwards (in reverse order) after the sequence of Scroll Up To Next Open Window button presses;
+                and if pressed in a Cloned View it will scroll it to the same position as the Main View.-->
+            </div>
+
+            <p>
+            <div><input type="checkbox" id="treeStyleTabs"> <label for="treeStyleTabs">Tree Style Tabs - newly created tab nodes will appear as childs of the current tab. </label> </div>
+            <div class="option-comment">
+                When disabled, tabs will be created in the tree as flat lists.
+            </div>
+
+            <p>
+            <div><input type="checkbox" id="openOnStatup"> <label for="openOnStatup">Open Tabs Outliner window on Chrome startup.</label> </div>
+            <p>
+            <div><input type="checkbox" id="openTabsOutlinerInLastClosedPos"> <label for="openTabsOutlinerInLastClosedPos">Open Tabs Outliner in the same position and size where it was last closed.</label></div>
+            <p>
+            <div><input type="checkbox" id="openSavedWindowsInOriginalPos"> <label for="openSavedWindowsInOriginalPos">Restore saved windows in the original position and size.</label></div>
+        </div>
+    </li>
+
+    <li class="tabs_li">
+        <input type="radio" name="tabs" class="tabs_radio" id="tab4" />
+        <label for="tab4" class="tablabel">Colors</label>
+        <div id="tab-content4" class="tab-content">
+            <div style="position:relative">
+            <div><input type="checkbox" id="overrideSavedTabColor">  <label for="overrideSavedTabColor">Override saved tab title color by </label>     <span style="vertical-align: middle; position:absolute; left: 275px;"> <input value="#606060" type="color" id="savedTabTextColor"/></span></div>
+            <div><input type="checkbox" id="overrideOpenTabColor"> <label for="overrideOpenTabColor">Override open tab title color by </label>         <span style="vertical-align: middle; position:absolute; left: 275px;"> <input value="#9CB7D3" type="color" id="openTabTextColor"/></span></div>
+            <div><input type="checkbox" id="overrideCurrentTabColor"> <label for="overrideCurrentTabColor">Override active tab title color by </label> <span style="vertical-align: middle; position:absolute; left: 275px;"> <input value="#ffffff" type="color" id="currentTabTextColor"/></span></div>
+            <div><input type="checkbox" id="overrideNoteTextColor">  <label for="overrideNoteTextColor">Override note text color color by </label>     <span style="vertical-align: middle; position:absolute; left: 275px;"> <input value="#DAD2B4" type="color" id="noteTextColor"/></span></div>
+            </div>
+            
+            <p>
+
+            <div><input type="checkbox" id="experimentalLightBackground"> <label for="experimentalLightBackground">Experimental light background.</label></div>
+
+            <p>
+
+            <div><input type="checkbox" checked="true" id="zoomHint"> <label for="zoomHint">This is just a hint that you can adjust font size in the Tabs Outliner window by Ctrl-'+' / Ctrl-'-'. </label> </div>
+        </div>
+    </li>
+    <!--
+    <li class="tabs_li">
+        <input type="radio" name="tabs" class="tabs_radio" id="tab5" />
+        <label for="tab5" class="tablabel">Import \ Export</label>
+        <div id="tab-content5" class="tab-content">
+            Import \ Export
+        </div>
+    </li>
+    -->
+</ul>
+
+<br style="clear: both;" />
+
+<div id='manualyEnterProKeyDialog' class='modal' style='display:none' >
+    <b>Tabs Outliner Serial Number is: </a><span id=serialNumber>error</span>.</b>
+    <br>Please paste the Paid Mode License Key tied to this serial in to the text field below:<br>
+    <textarea id=modalEditPrompt-editField rows="4">This is a test!</textarea>
+<!--<div><a target="_blank" href="http://tabsoutliner.com/request_key_by_email.html">Or request your key trough our service by clicking this link</a></div>-->
+    <button id=modalEditPrompt-cancellBtn class="form_btn btn_cancell" tabindex=-1>Cancel</button> <button id=modalEditPrompt-okBtn class="form_btn btn_ok" tabindex=-1>OK</button>
+</div>
+
+<div id='buyBeforeIdentityAccessDialog' class='modal buydialog' style='display:none;padding: 20px 35px; padding-bottom: 10px;' >
+    <h1 style="text-align: center;">Your email will remain unknown to us</h1>
+    <img src="img/options/pro_tab/email_mosaic.png" style="display:block; margin:auto"/>
+    <p>Tabs Outliner now needs access your Chrome Profile email. However, this email will not be transferred outside of your computer.
+    
+    <p>It will be used to calculate a serial number, which then will be embedded in the license key. So you will be able to use this license key on any computer where Chrome is logged in using the same email.
+    
+    <p>This serial number is not reversible back to your email. Therefore, we will not be able to send you any messages, transfer your email to third parties or use it for any other purpose except the license key validation.
+
+    <p>This is done this way exactly to allow you to keep your Chrome Profile email unknown to the rest of the world (just use another email for communication purposes, during the purchase process or support, if you concerned to keep your Chrome Profile email in the secret).
+
+    <p><button id=modalEditPrompt-okBtn class="form_btn form_btn_wide_centered btn_ok" style="background-color:#C0FFB2" tabindex=-1>Allow Email Access and Continue to the <span id=modalPrompt-customLabelField>Payment Process</span></button>
+    </p>
+</div>
+
+<div id='buyBeforeFastSpringDialog___' class='modal buydialog' style='display:none; padding: 20px 35px; padding-bottom: 10px;' >
+    <p> Your Tabs Outliner Instance Serial Number is: <span id=modalPrompt-serialNumber>000000000000000000</span>.
+    </p>
+
+    <p>Along with a license to use extended offline functionality of Tabs Outliner the purchase of the Paid Mode License Key will
+       also grant you a one year of Realtime Cloud Backup of your Tree.
+    </p>
+
+    <p>This purchase is NOT a subscription but a one time payment, thus - you credit card will never be automaticaly charged again.
+       Near the end of the usage period of Tabs Outliner online backup services we will notify your to perform the next payment.
+    </p>
+
+    <p>If you will not bought next anual period of Realtime Backup  you still will be able to use all currently present enchanced Offline Paid Mode
+        capabilities of Tabs Outliner. And the backup will also still work, yet not in realtime, backup will switch to once per few days mode.
+    </p>
+    
+    <p>If your personaly use several other Chrome Profiles on a same PC, logged in using different emails, we can provide
+    your Paid Mode License Keys for them free of charge, after the first paid one - please send your serial numbers for them to support@tabsoutliner.com.
+    Tabs Outliner in Pro mode support such usage by Drag & Drop between trees created in different Chrome profiles.
+    </p>
+
+    <p> <button id=modalEditPrompt-okBtn class="form_btn form_btn_wide_centered btn_ok" style="background-color:#C0FFB2" tabindex=-1>
+            Buy Paid Mode License Key and a Year Of Realtime Backup
+        </button>
+    </p>
+
+    <p>Privacy Policy: The ecomerce payments processor unfortunately will ask some usual personal information required by regulators to finish the deal,
+       it will not be used for anything beyond the purchase process, no spam, no upsels, no transfering to third parties.
+    </p>
+    
+    <p>If you highly concerned about anonimity, you can bought a Paid Mode License Key and access to Tabs Outliner online
+       services using Bitcoins, thus without exposing any of you personal data, even the name if you want - contact support@tabsoutliner.com for this.
+    </p>
+</div>
+
+<script type="text/javascript" src="tree/js/modal.js"></script>
+<script type="text/javascript" src="options_dialogs.js"></script>
+<script type="text/javascript" src="options.js"></script>
+<script type="text/javascript" src="backup/options-backup.js"></script>
+
+</body>
+</html>
+
+
+

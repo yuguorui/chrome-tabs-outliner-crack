@@ -1,0 +1,1811 @@
+/*body {*/
+@charset "utf-8";
+html {
+  overflow-x: hidden;
+}
+/*body {*/
+/*position: absolute;*/
+/*top: 0px;*/
+/*left: 0px;*/
+/*bottom: 00px;*/
+/*right: 0px;*/
+/*padding: 0px;*/
+/*overflow-y: scroll;*/
+/*overflow-x: hidden;*/
+/*}*/
+::-webkit-scrollbar {
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 1px 0 6px 0px #000000;
+  background: url(../img/backgrounds/black-Linen.png) repeat;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: rgba(22, 75, 105, 0.8);
+  background: rgba(36, 120, 168, 0.8);
+  background: #1e81d8;
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(22, 75, 105, 0.4);
+  background: rgba(36, 120, 168, 0.4);
+  background: #93bcdf;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+li {
+  list-style-type: none;
+  display: block;
+  padding: 0px;
+  margin: 0px;
+}
+body {
+  background: #002141;
+  background: #202020;
+  /*
+
+
+    background-image: url(img/backgrounds/vertical_cloth.png);интересно
+    background-image: url(img/backgrounds/darkdenim3.png);интересно+
+    background-image: url(img/backgrounds/denim.png);интересно
+    background-image: url(img/backgrounds/irongrip.png);интересно+
+    background-image: url(img/backgrounds/nami.png);интересно
+    background-image: url(img/backgrounds/broken_noise.png); неплохо
+    background-image: url(img/backgrounds/fake_brick.png);интересно
+    background-image: url(img/backgrounds/px_by_Gre3g.png);интересно, но надо темнее
+    background-image: url(img/backgrounds/zigzag.png);темнее бы, может было бы интересно
+    background-image: url(img/backgrounds/triangles.png);неочень
+    background-image: url(img/backgrounds/rubber_grip.png);интересно
+    background-image: url(img/backgrounds/darth_stripe.png); тектура гавно
+    background-image: url(img/backgrounds/green-fibers.png); интересно
+    background-image: url(img/backgrounds/concrete_wall.png); прикольно, но крупные пятна убрать надо
+    background-image: url(img/backgrounds/wavecut.png); белый - надо попробовать чорный авариант
+    background-image: url(img/backgrounds/little_pluses.png); белый - не подходи, а чёрный бы был неплох
+    background-image: url(img/backgrounds/random_grey_variations.png); интересно, но ярковато, но интересно
+
+    background-image: url(img/backgrounds/blackmamba.png);неплохо
+    background-image: url(img/backgrounds/micro_carbon.png); неплохо
+    background-image: url(img/backgrounds/tactile_noise.png);цвет неплох, похож на следующий если не тотже, текстура уже лучше
+    background-image: url(img/backgrounds/carbon_fibre.png); сам цвет ОЧЕНЬ неплох! дырачки так себе
+
+
+    background-image: url(img/backgrounds/black_linen_v2.png);неплохо+ но надо темнее
+    background-image: url(img/backgrounds/black-Linen.png);неплохо+
+    background-image: url(img/backgrounds/pool_table_background.png);класс
+    background-image: url(img/backgrounds/black_dragon_scales.png);
+    background-image: url(img/backgrounds/dark_leather.png);класс
+    background-image: url(img/backgrounds/black_paper.png); класс
+    background-image: url(img/backgrounds/dark_stripes.png);класс
+    background-image: url(img/backgrounds/black_denim.png); класс
+    ----------------*/
+
+  /*background-image: url(../img/backgrounds/wavecut.png);
+
+    background-image: url(../img/backgrounds/stripes_gray.png);
+    background-image: url(../img/backgrounds/stripes2.png);
+    background-image: url(../img/backgrounds/vertical_cloth.png);
+    background-image: url(../img/backgrounds/darkdenim3.png);
+    background-image: url(../img/backgrounds/denim.png);
+    background-image: url(../img/backgrounds/irongrip.png);
+    background-image: url(../img/backgrounds/nami.png);
+    background-image: url(../img/backgrounds/broken_noise.png);
+    background-image: url(../img/backgrounds/fake_brick.png);
+    background-image: url(../img/backgrounds/px_by_Gre3g.png);
+    background-image: url(../img/backgrounds/zigzag.png);
+    background-image: url(../img/backgrounds/triangles.png);
+    background-image: url(../img/backgrounds/rubber_grip.png);
+    background-image: url(../img/backgrounds/darth_stripe.png);
+    background-image: url(../img/backgrounds/green-fibers.png);
+    background-image: url(../img/backgrounds/concrete_wall.png);
+    background-image: url(../img/backgrounds/little_pluses.png);
+    background-image: url(../img/backgrounds/random_grey_variations.png);
+    background-image: url(../img/backgrounds/blackmamba.png);
+    background-image: url(../img/backgrounds/micro_carbon.png);
+    background-image: url(../img/backgrounds/tactile_noise.png);
+    background-image: url(../img/backgrounds/carbon_fibre.png);
+    background-image: url(../img/backgrounds/black_dragon_scales.png);
+
+
+    background-image: url(../img/backgrounds/black_linen_v2.png);
+
+    background-image: url(../img/backgrounds/dark_leather.png);
+    background-image: url(../img/backgrounds/black_paper.png);
+
+    background-image: url(../img/backgrounds/black_denim.png);
+
+    background-image: url(../img/backgrounds/pool_table_background.png);
+    background-image: url(../img/backgrounds/pool_table_background_dark.png);
+    background-image: url(../img/backgrounds/stripes.png);
+
+
+    background-image: url(../img/backgrounds/dark_stripes_light.png);
+    background-image: url(../img/backgrounds/dark_stripes.png);
+    */
+
+  background-image: url(../img/backgrounds/black-Linen.png);
+  /*background:url(../img/backgrounds/spottest.svg);*/
+
+  /*-webkit-background-size: 100% 100%;*/
+
+  /*-moz-background-size: 100% 100%;*/
+
+  /*-o-background-size: 100% 100%;*/
+
+  /*background-size: 100% 100%;*/
+
+}
+*:focus {
+  outline: none;
+}
+/*
+.currentNode.windownode {
+    background-color: #DDDEE0;
+}
+*/
+/*
+.currentTabNode {
+    border-radius: 3px;
+    background-color: #6F7784;
+}
+
+.currentWinNode {
+    border-radius: 4px;
+    background-color: #DDDEE0;
+    padding:1;
+}
+*/
+/*.rellinestartcell, .nodeTitleAndSubnodesContainer, .subnodeslink, .nopadding, .anchorcell, .relllineiconstable td {*/
+/*padding:0;*/
+/*}*/
+.subnodeslist {
+  border-collapse: collapse;
+}
+.relllineiconstable {
+  width: 100%;
+  white-space: nowrap;
+  border-collapse: collapse;
+}
+.nodeTitleAndSubnodesContainer {
+  vertical-align: top;
+  white-space: nowrap;
+}
+.anchorcell,
+.rellinestartcell {
+  /*width := ширине тайла; это делается в коде, динамично*/
+
+  white-space: nowrap;
+  vertical-align: top;
+  overflow: hidden;
+  /*this hide last part of vertial line*/
+
+}
+.nodeTitleContainer {
+  padding-left: 15px;
+  padding-bottom: 0px;
+  /* см также currentNode*/
+  /*Регулирует отступ между нодами, значение 1px тоже красиво*/
+  /*todo это можно вынести в интерактивный в интерактивный setup */
+
+  display: block;
+  /* Делает так что б бекграйнд у всех нод продолжался на всю длину внешнего контеинера - которая равна ширине окна обычно, если ничем не ограничена
+                       раньше было inline-block, но с block выделение currentNode выглядит сильно красивее (на всю ширину окна, и видно полоски, и соответствует активной зоне которая детектает mouseover
+                       хотя детектает на самом деле узел выше, но мы не можем ему сделать curent бекграунд полосатый - так как он включает ещё дерево субнод)
+                       однако для окон это жопа и не красиво что их рамка на всю ширину окна, поэтому для окон всёже следубщим правилом вернём inline-block для тайтла*/
+
+}
+.NTC-windowFrame > .nodeFaviconAndTextHelperContainer {
+  display: inline-block;
+  /* для Окон, и тех контейнеров что рисуют какуюто рамку вокруг тайтла*/
+
+}
+.nodeTitleContainer.expandedsubnodes,
+.nodeTitleContainer.collapsedsubnodes {
+  cursor: pointer;
+}
+.nodeTitleContainer.nosubnodes {
+  cursor: default;
+}
+.nodeTitleAndSubnodesContainer {
+  padding-left: 17px;
+  /*место для картинки сойдинения подузла с вертикальной линий от парента*/
+
+  /*17px - это делает в случае отсутствия icons квадратики узлов табов ровно под хромеиконкой окна*/
+
+}
+.nodeTitleAndSubnodesContainer {
+  background: url(../img/treetiles/correlatestyle/lineto_subnode_s1.png) 7px 8px no-repeat, url(../img/treetiles/correlatestyle/line_vertical_s1.png) 6px 0px repeat-y;
+}
+.nodeTitleAndSubnodesContainer:last-child {
+  background: url(../img/treetiles/correlatestyle/lineto_last_subnode_s1.png) 0px -2px no-repeat;
+}
+.NTASC-windowFrame.nodeTitleAndSubnodesContainer {
+  background: url(../img/treetiles/correlatestyle/lineto_subnode_s1.png) 7px 10px no-repeat, url(../img/treetiles/correlatestyle/line_vertical_s1.png) 6px 2px repeat-y;
+}
+.NTASC-windowFrame.nodeTitleAndSubnodesContainer:last-child {
+  background: url(../img/treetiles/correlatestyle/lineto_last_subnode_s1.png) 0px 0px no-repeat;
+}
+.sessionNTASC.nodeTitleAndSubnodesContainer {
+  background: none, none, none;
+  padding-left: 5px;
+}
+.NCC-NTASC-a.nodeTitleAndSubnodesContainer {
+  background: url(../img/treetiles/correlatestyle/separator_a_lineto_s1.png) 6px 7px no-repeat, url(../img/treetiles/correlatestyle/line_vertical_s1.png) 6px 0px repeat-y;
+}
+.NCC-NTASC-b.nodeTitleAndSubnodesContainer {
+  background: url(../img/treetiles/correlatestyle/separator_b_lineto_s1.png) 6px 8px no-repeat, url(../img/treetiles/correlatestyle/line_vertical_s1.png) 6px 0px repeat-y;
+}
+.NCC-NTASC-c.nodeTitleAndSubnodesContainer {
+  background: url(../img/treetiles/correlatestyle/separator_c_lineto_s1.png) 6px 8px no-repeat, url(../img/treetiles/correlatestyle/line_vertical_s1.png) 6px 0px repeat-y;
+}
+.NCC-NTASC-a.nodeTitleAndSubnodesContainer:last-child {
+  background: url(../img/treetiles/correlatestyle/separator_a_lineto_last_s1.png) no-repeat;
+}
+.NCC-NTASC-b.nodeTitleAndSubnodesContainer:last-child {
+  background: url(../img/treetiles/correlatestyle/separator_b_lineto_last_s1.png) no-repeat;
+}
+.NCC-NTASC-c.nodeTitleAndSubnodesContainer:last-child {
+  background: url(../img/treetiles/correlatestyle/separator_c_lineto_last_s1.png) no-repeat;
+}
+.separatorlineNTC.nodeTitleContainer {
+  height: 16px;
+  padding-left: 0px;
+  padding-right: 10px;
+}
+.NCC-NTC-a.separatorlineNTC.nodeTitleContainer {
+  background: url(../img/treetiles/correlatestyle/separator_a_line_s1.png) left 6px repeat-x, url(../img/treetiles/correlatestyle/separator_a_finish_s1.png) right 5px no-repeat;
+  background-clip: content-box, border-box;
+}
+.NCC-NTC-a.separatorlineNTC.nodeTitleContainer.currentNode {
+  background: url(../img/treetiles/correlatestyle/separator_a_line_s1.png) left 6px repeat-x, url(../img/treetiles/correlatestyle/separator_a_finish_s1.png) right 5px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+  background-clip: content-box, border-box, border-box;
+}
+.NCC-NTC-b.separatorlineNTC.nodeTitleContainer {
+  background: url(../img/treetiles/correlatestyle/separator_b_line_s1.png) left 7px repeat-x, url(../img/treetiles/correlatestyle/separator_b_finish_s1.png) right 6px no-repeat;
+  background-clip: content-box, border-box;
+}
+.NCC-NTC-b.separatorlineNTC.nodeTitleContainer.currentNode {
+  background: url(../img/treetiles/correlatestyle/separator_b_line_s1.png) left 7px repeat-x, url(../img/treetiles/correlatestyle/separator_b_finish_s1.png) right 6px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+  background-clip: content-box, border-box, border-box;
+}
+.NCC-NTC-c.separatorlineNTC.nodeTitleContainer {
+  background: url(../img/treetiles/correlatestyle/separator_c_line_s1.png) left 7px repeat-x, url(../img/treetiles/correlatestyle/separator_c_finish_s1.png) right 6px no-repeat;
+  background-clip: content-box, border-box;
+}
+.NCC-NTC-c.separatorlineNTC.nodeTitleContainer.currentNode {
+  background: url(../img/treetiles/correlatestyle/separator_c_line_s1.png) left 7px repeat-x, url(../img/treetiles/correlatestyle/separator_c_finish_s1.png) right 6px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+  background-clip: content-box, border-box, border-box;
+}
+.nodeTitleContainer.expandedsubnodes {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_s1.png) 0px -1px no-repeat;
+}
+.nodeTitleContainer.expandedsubnodes.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_s1.png) 0px -1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.nodeTitleContainer.collapsedsubnodes {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_s1.png) 0px -1px no-repeat;
+}
+.nodeTitleContainer.collapsedsubnodes.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_s1.png) 0px -1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.nodeTitleContainer.nosubnodes {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_s1.png) 0px -1px no-repeat;
+}
+.nodeTitleContainer.nosubnodes.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_s1.png) 0px -1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.expandedsubnodes {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_s1.png) 0px 1px no-repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.expandedsubnodes.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_s1.png) 0px 1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.collapsedsubnodes {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_s1.png) 0px 1px no-repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.collapsedsubnodes.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_s1.png) 0px 1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.nosubnodes {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_s1.png) 0px 1px no-repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.nosubnodes.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_s1.png) 0px 1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.nodeTitleContainer.expandedsubnodes.protected {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_protected.png) 0px -1px no-repeat;
+}
+.nodeTitleContainer.expandedsubnodes.protected.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_protected.png) 0px -1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.nodeTitleContainer.collapsedsubnodes.protected {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_protected.png) 0px -1px no-repeat;
+}
+.nodeTitleContainer.collapsedsubnodes.protected.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_protected.png) 0px -1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.nodeTitleContainer.nosubnodes.protected {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_protected.png) 0px -1px no-repeat;
+}
+.nodeTitleContainer.nosubnodes.protected.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_protected.png) 0px -1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.expandedsubnodes.protected {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_protected.png) 0px 1px no-repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.expandedsubnodes.protected.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_expanded_protected.png) 0px 1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.collapsedsubnodes.protected {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_protected.png) 0px 1px no-repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.collapsedsubnodes.protected.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_colapsed_protected.png) 0px 1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.nosubnodes.protected {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_protected.png) 0px 1px no-repeat;
+}
+.NTC-windowFrame.nodeTitleContainer.nosubnodes.protected.currentNode {
+  background: url(../img/treetiles/correlatestyle/node_anchor_no_subnodes_protected.png) 0px 1px no-repeat, url(../img/backgrounds/stripes_gray.png) repeat;
+}
+.currentNode {
+  border-radius: 4px;
+  /*correlate with win border-radius*/
+
+}
+.currentNode.nodeTitleAndSubnodesContainer {
+  margin-right: 4px;
+}
+.currentNode {
+  box-shadow: 0px 0px 5px 0px #444444;
+}
+/*.reliconstest {*/
+/*display: inline-block;*/
+/*width:100px;*/
+/*height:9px;*/
+/*float:left;*/
+/*background: url(../img/treetiles/correlatestyle/line_horizontal_s1.png) repeat-x;*/
+/*background-color: red;*/
+/*}*/
+/*.reliconstest:after {*/
+/*content:'*';*/
+/*}*/
+/*.subnodeslist {*/
+/*margin-left: 100px;*/
+/*}*/
+.regularText {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #ffffcc;
+  color: #7e8791;
+  color: #9cb7d3;
+}
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #ffffcc;
+  color: #7e8791;
+  color: #9cb7d3;
+}
+a {
+  text-decoration: none;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #ffffcc;
+  color: #7e8791;
+  color: #9cb7d3;
+}
+/*a:hover {*/
+/*text-decoration: underline;*/
+/*}*/
+.nodeFaviconAndTextHelperContainer,
+.node_text,
+.node_favicon {
+  cursor: default;
+}
+/*
+14x14 стиль - мне больше нравится
+.node_favicon {
+    width:14px;
+    height:14px;
+    margin:1px;
+}
+*/
+.node_favicon {
+  float: left;
+}
+.node_text {
+  display: block;
+  margin-left: 19px;
+}
+.node_text {
+  padding-right: 4px;
+  /*когда узел выделен и бекграунд залит другим цветом то правая граница слишком близко прижата к тексту - это некрасиво*/
+
+  white-space: nowrap;
+  /* один таб - одна строка */
+
+}
+.node_text {
+  padding-top: 1px;
+  min-height: 15px;
+  font-size: 11px;
+}
+.collapsedNodesInfo {
+  color: white;
+  font-weight: normal;
+  font-size: 11px;
+  padding-top: 1px;
+  padding-right: 2px;
+  margin-left: -1px;
+  float: left;
+}
+.collapsedNodesInfo::before {
+  content: '[';
+}
+.collapsedNodesInfo::after {
+  content: ']';
+}
+.collapsedNodesInfo > *::after {
+  content: '/';
+}
+.collapsedNodesInfo > *:last-child::after {
+  content: '';
+}
+.activeTabsCount {
+  padding-left: 11px;
+  margin-left: -1px;
+  background: url(../img/tabscounter.png) no-repeat left 2px;
+}
+.activeWinsCount {
+  padding-left: 11px;
+  margin-left: -1px;
+  background: url(../img/winscounter.png) no-repeat left 2px;
+}
+.NTC-windowFrame .collapsedNodesInfo {
+  padding-top: 3px;
+}
+.node_favicon {
+  width: 16px;
+  height: 16px;
+  margin: 0px;
+  margin-right: 3px;
+}
+.separatorline_favicon {
+  display: none;
+}
+.separatorline_text {
+  display: none;
+}
+.session_text {
+  padding-top: 0px;
+  min-height: 16px;
+  font-size: 12px;
+  padding-left: 3px;
+}
+.win_text,
+.savedwin_text,
+.session_text,
+.group_text {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.nodeFaviconAndTextHelperContainer.win {
+  background-color: #16426e;
+}
+.nodeFaviconAndTextHelperContainer.session {
+  background-color: #1F4F96;
+}
+.nodeFaviconAndTextHelperContainer.waitingwin,
+.nodeFaviconAndTextHelperContainer.savedwin {
+  background-color: #424242;
+}
+.nodeFaviconAndTextHelperContainer.group {
+  background-color: #614932;
+}
+.selectedtab.tabNTC {
+  color: #eee;
+  font-weight: bold;
+}
+.focusedwindow .nodeFaviconAndTextHelperContainer.win {
+  background-color: #1c6aba;
+}
+.focusedwindow .win_text {
+  background-color: #1c6aba;
+  color: white;
+}
+.savedwin_text.recentlySavedOnCloseAll,
+.savedwin_text.recentlyCrashed {
+  color: #86f98e;
+}
+.savedtab_text,
+.waitingtab_text,
+.attachwaitingtab_text {
+  color: #888;
+}
+.group_text {
+  color: #F4E3C7;
+}
+.savedwin_text {
+  color: #8696a7;
+}
+.textnote_text {
+  margin-left: 2px;
+  color: #DAD2B4;
+}
+.tab_comment {
+  color: #DAD2B4;
+  /*
+    padding-right: 3px;
+    margin-right: 3px;
+    border-right: 1px dotted gray;
+    border-radius: 144px;
+    */
+
+}
+.tab_comment:after {
+  content: '~';
+  padding: 3px;
+  color: #c09872;
+}
+.nodeFaviconAndTextHelperContainer {
+  /*border: 1px solid;*/
+
+  border-radius: 4px;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 4px;
+  padding-bottom: 2px;
+}
+/* Отступы между окнами (счас действует на всё - возможно это плохо) в свёрнутом и развёрнутом состоянии*/
+.nodeTitleAndSubnodesContainer {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  margin-bottom: -1px;
+}
+.sessionNTASC > .subnodeslist > .nodeTitleAndSubnodesContainer > .subnodeslist {
+  padding-bottom: 9px;
+}
+/* ----------------------------------------------------------------------------------------------------- */
+/* - Css Rules not related to CorrelateStyle but to UI in general (need actualy move them to separate file) ---------------------------------------- */
+/* Prevent selection in HTML */
+/* Делаем тайлы линий не селектабельными - чтоб не портились цветом селекта, а главное чтоб курсор над ними текстовым не становился*/
+/* For IE and Opera, you will need to use the unselectable attribute in the HTML: <div id="foo" unselectable="on">...</div> */
+/* WARNING использование ниже -webkit-user-drag: element; для nodeTitleAndSubnodesContainer делает все эти декларации ненужными и не имеющими силы*/
+/*.anchorcell,*/
+/*.rellinestartcell,*/
+/*.nodeTitleAndSubnodesContainer,*/
+/*.subnodeslist, // если разрешить им селект во время селекта по их границам некрасиво распространяется селект*/
+/*.node_favicon  // фавиконки внёс сюда просто так - не факт что это полезно, но если они селектаются то в клипбоард попадают их урлы при копировании*/
+/*{*/
+/*-webkit-user-select: none;*/
+/*-moz-user-select: -moz-none; *//* -moz-user-select: none; none отличается от -moz-none и в худшую сторону - смотри доку (визуально селектинга нет на лишних элементах, но в клипбоард попадает разметка)*/
+/*user-select: none;*/
+/*}*/
+/* Ну его нафиг этот селектинг текста, по факту он только мешает и постоянно при драге не в тему вылазит, а полезности от возможности скопировать*/
+/* тайтл или список тайтлов я вообще не вижу - к томуже для этого есть вообще Cntrl-C или драг в нотепад, чтоб тайтлы в виде текста получить*/
+/*.node_text {*/
+/*-webkit-user-drag: none;*/
+/*-webkit-user-select: none;*/
+/*-moz-user-select: -moz-none;*/
+/*user-select: none;*/
+/*}*/
+/* По дефолту картинки драгабельны - в результате если юзер будет тащить за них весь узел драгаться не начнёт - только картинка - отключаем это*/
+/*.rellinetiles,*/
+/*.node_favicon {*/
+/*-webkit-user-drag: none;*/
+/*-webkit-user-select: none;*/
+/*-moz-user-select: -moz-none;*/
+/*user-select: none;*/
+/*}*/
+/*.nodeTitleContainer  {*/
+/*-webkit-user-select: none;*/
+/*-moz-user-select: -moz-none;*/
+/*user-select: none;*/
+/*}*/
+.nodeTitleContainer {
+  -webkit-user-drag: none;
+}
+.nodeTitleAndSubnodesContainer {
+  -webkit-user-drag: element;
+}
+.nodeTitleAndSubnodesContainer {
+  -webkit-user-select: none;
+}
+.node_text {
+  -webkit-user-select: text;
+}
+#dragFeedback {
+  pointer-events: none;
+  position: absolute;
+  background: rgba(135, 189, 242, 0.2);
+  width: 15px;
+}
+.hoveringMenu_container {
+  pointer-events: none;
+  position: absolute;
+  height: 16px;
+  left: 0;
+  width: 100%;
+  background: rgba(36, 145, 255, 0.08);
+}
+.NTASC-windowFrame > .hoveringMenu_container {
+  height: 20px;
+}
+.hoveringMenu_panel {
+  pointer-events: none;
+  position: absolute;
+  display: inline-block;
+  top: -8px;
+  right: -5px;
+  height: 31px;
+  padding: 4px;
+  padding-left: 23px;
+  padding-right: 7px;
+  background: url(../img/hoveringmenu/hmenubkg_end.png) no-repeat right top, url(../img/hoveringmenu/hmenubkg_start.png) no-repeat left top, url(../img/hoveringmenu/hmenubkg_body.png) repeat-x left top;
+  background-clip: border-box, border-box, content-box;
+}
+.hoveringMenu_expandCollapseBtn {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 16px;
+  height: 16px;
+  pointer-events: auto;
+  cursor: pointer;
+}
+/*.win.hoveringMenu_panel, тут нельзя юзать ".win .hoveringMenu_panel" с пробелом - так как все табы тоже находятся внутри win*/
+.NTASC-windowFrame > .hoveringMenu_container > .hoveringMenu_panel {
+  top: -6px;
+}
+.hoveringMenu_closeAction {
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-block;
+  width: 21px;
+  height: 24px;
+}
+.hoveringMenu_closeAction {
+  background: transparent url(../img/hoveringmenu/btn_close_normal.png) no-repeat;
+}
+.hoveringMenu_closeAction:hover {
+  background: transparent url(../img/hoveringmenu/btn_close_hover.png) no-repeat;
+}
+.hoveringMenu_closeAction:active {
+  background: transparent url(../img/hoveringmenu/btn_close_down.png) no-repeat;
+}
+.hoveringMenu_deleteAction {
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-block;
+  width: 21px;
+  height: 24px;
+}
+.hoveringMenu_deleteAction {
+  background: transparent url(../img/hoveringmenu/btn_delete_normal.png) no-repeat;
+}
+.hoveringMenu_deleteAction:hover {
+  background: transparent url(../img/hoveringmenu/btn_delete_hover.png) no-repeat;
+}
+.hoveringMenu_deleteAction:active {
+  background: transparent url(../img/hoveringmenu/btn_delete_down.png) no-repeat;
+}
+.hoveringMenu_editTitleAction {
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+}
+.hoveringMenu_editTitleAction {
+  background: url(../img/hoveringmenu/btn_edit_normal.png) no-repeat, url(../img/hoveringmenu/hovering_menu_separator.png) 22px 5px no-repeat;
+}
+.hoveringMenu_editTitleAction:hover {
+  background: url(../img/hoveringmenu/btn_edit_hover.png) no-repeat, url(../img/hoveringmenu/hovering_menu_separator.png) 22px 5px no-repeat;
+}
+.hoveringMenu_editTitleAction:active {
+  background: url(../img/hoveringmenu/btn_edit_down.png) no-repeat, url(../img/hoveringmenu/hovering_menu_separator.png) 22px 5px no-repeat;
+}
+.hoveringMenu_setCursorAction {
+  pointer-events: auto;
+  cursor: pointer;
+  display: inline-block;
+  width: 25px;
+  height: 24px;
+}
+.hoveringMenu_setCursorAction {
+  background: url(../img/hoveringmenu/btn_setcursor_normal.png) no-repeat, url(../img/hoveringmenu/hovering_menu_separator.png) 22px 5px no-repeat;
+}
+.hoveringMenu_setCursorAction:hover {
+  background: url(../img/hoveringmenu/btn_setcursor_hover.png) no-repeat, url(../img/hoveringmenu/hovering_menu_separator.png) 22px 5px no-repeat;
+}
+.hoveringMenu_setCursorAction:active {
+  background: url(../img/hoveringmenu/btn_setcursor_down.png) no-repeat, url(../img/hoveringmenu/hovering_menu_separator.png) 22px 5px no-repeat;
+}
+#mainToolbarAndMessagesContainer {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0px;
+  right: 0px;
+  -webkit-user-select: none;
+  /* place toolbar in the own GPU accelerated Layer*/
+
+  /* это сделано не для ускорения акселерации, а потому что иногда при скроле, особенно когда тулбар и месаги под тулбаром находились над
+    спейсером снизу дерева, они чоень неприятно дёргались, на экранпопадал временно момент перерисовки их гдето посередине,
+    я так и не понял или это баг хрома или мой (возможно я гдето какието проперти позиционные кодом апдейчу несколько раз),
+    но сунуть тулбар и месаги в own GPU accelerated Layer полечели этот эфект полностью, больше ничего не фликает и не дёргается*/
+
+  -webkit-transform: translatez(0px);
+  /*попробовать 0 кстате и убедится что жолтый прямоугольник есть - таки есть*/
+
+}
+#mainViewMessagesStack {
+  display: block;
+  background-color: black;
+  padding: 1px;
+  padding-top: 2px;
+}
+.mainViewMessage {
+  background-color: #5890ff;
+  border: 1px solid #5890ff;
+  -webkit-border-radius: 3px;
+  overflow: hidden;
+  padding: 0 0 0 40px;
+  word-wrap: break-word;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 12px;
+  color: #141823;
+  line-height: 1.28;
+  text-align: left;
+}
+.mainViewMessage + .mainViewMessage {
+  margin-top: 2px;
+}
+.mainViewMessage[type='warning'] {
+  background-color: #FFB758;
+  border: 1px solid #FFB758;
+}
+.mainViewMessage[type='error'] {
+  background-color: crimson;
+  border: 1px solid crimson;
+}
+.mainViewMessageIcon {
+  width: 18px;
+  height: 18px;
+  color: #141823;
+  line-height: 1.28;
+  margin: 0;
+  padding: 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+  display: inline-block;
+  float: left;
+  margin: 9px 0 0 -29px;
+}
+.mainViewMessage[type='info'] > .mainViewMessageIcon {
+  background-image: url(/img/messages/info_icon.png);
+}
+.mainViewMessage[type='warning'] > .mainViewMessageIcon {
+  background-image: url(/img/messages/warning_icon.png);
+}
+.mainViewMessage[type='error'] > .mainViewMessageIcon {
+  background-image: url(/img/messages/warning_icon.png);
+}
+.mainViewMessageRemoveBtn {
+  background-image: url(/img/messages/close.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -187px;
+}
+.mainViewMessageRemoveBtn:hover {
+  background-image: url(/img/messages/close.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -200px;
+  text-decoration: none;
+}
+.mainViewMessageRemoveBtn:active,
+.mainViewMessageRemoveBtn {
+  background-image: url(/img/messages/close.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -13px -187px;
+}
+.mainViewMessageRemoveBtn {
+  float: right;
+  margin: 12px 12px 0 0;
+}
+.mainViewMessageRemoveBtn {
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.mainViewMessageRemoveBtn {
+  background-color: transparent;
+  border: 0 none;
+  cursor: pointer;
+  font-size: 0 !important;
+  overflow: hidden;
+  padding: 0;
+  vertical-align: middle;
+}
+.mainViewMessageRemoveBtn {
+  height: 12px;
+  width: 12px;
+}
+a.mainViewMessageRemoveBtn {
+  color: #3b5998;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mainViewMessageBody {
+  background: #fff;
+  margin: 0;
+  padding: 9px 30px 9px 10px;
+  word-wrap: break-word;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #141823;
+  line-height: 1.28;
+  text-align: left;
+  font-size: 14px;
+  line-height: 18px;
+}
+.mainViewMessage[type='gopro'] {
+  overflow: visible;
+  background-color: black;
+  border: none;
+  padding: 15px 15px;
+  padding-left: 17px;
+  position: relative;
+}
+.mainViewMessage[type='gopro'] .mainViewMessageRemoveBtn {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+}
+.goproMessageTextBlock {
+  color: #FFEC6C;
+  padding-right: 96px;
+  font-size: 14px;
+}
+.goproMessageTextBlock a {
+  color: #4F75FF;
+}
+.goproMessageTextBlock h1 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.goproMessageIllustration {
+  float: right;
+  position: absolute;
+  top: -20px;
+  right: 14px;
+  pointer-events: none;
+}
+.mainToolbarContainer {
+  display: inline-block;
+  padding: 2px 3px 0px 0px;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 5px;
+  -webkit-user-select: none;
+  overflow: hidden;
+}
+.mainToolbarInnerArea {
+  padding: 4px;
+  border: 1px dashed gray;
+  border-left: 0px;
+  border-bottom: 0px;
+  border-radius: 0px;
+  border-top-right-radius: 8px;
+  -webkit-user-select: none;
+  box-shadow: 0 0 4px 2px #333;
+}
+.mainToolbarInnerArea,
+.mainToolbarInfoSettingsHelpArea {
+  /*float:left;*/
+
+  display: inline-block;
+}
+.mainToolbarInfoSettingsHelpArea {
+  margin-top: 6px;
+}
+#mainToolbarButtonsArea {
+  display: inline-block;
+}
+#backupNowButton {
+  display: inline-block;
+  width: 56px;
+  height: 66px;
+}
+#backupRecentlySucceededIndicator {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  top: -12px;
+  left: 18px;
+  background-color: #0ce824;
+}
+#backupSomeTimeAgoSucceededIndicator {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  top: -12px;
+  left: 18px;
+  background-color: #a1ffab;
+}
+#backupNotPerformedForMoreThanADayIndicator {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  top: -12px;
+  left: 18px;
+  background-color: #fff832;
+}
+#backupFailedIndicator {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  top: -12px;
+  left: 18px;
+  background-color: #de264e;
+}
+#backupInProgressIndicator {
+  position: relative;
+  width: 20px;
+  height: 2px;
+  top: -12px;
+  left: 18px;
+}
+#backupInProgressIndicator div {
+  position: absolute;
+  top: 0;
+  background-color: #0b59e0;
+  width: 2px;
+  height: 2px;
+  -moz-animation-name: bounce_squaresWaveG;
+  -moz-animation-duration: 1.12s;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-direction: normal;
+  -webkit-animation-name: bounce_squaresWaveG;
+  -webkit-animation-duration: 1.12s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: normal;
+  -ms-animation-name: bounce_squaresWaveG;
+  -ms-animation-duration: 1.12s;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-direction: normal;
+  -o-animation-name: bounce_squaresWaveG;
+  -o-animation-duration: 1.12s;
+  -o-animation-iteration-count: infinite;
+  -o-animation-direction: normal;
+  animation-name: bounce_squaresWaveG;
+  animation-duration: 1.12s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+#squaresWaveG_1 {
+  left: 0;
+  -moz-animation-delay: 0.32s;
+  -webkit-animation-delay: 0.32s;
+  -ms-animation-delay: 0.32s;
+  -o-animation-delay: 0.32s;
+  animation-delay: 0.32s;
+}
+#squaresWaveG_2 {
+  left: 2px;
+  -moz-animation-delay: 0.4s;
+  -webkit-animation-delay: 0.4s;
+  -ms-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+#squaresWaveG_3 {
+  left: 4px;
+  -moz-animation-delay: 0.48s;
+  -webkit-animation-delay: 0.48s;
+  -ms-animation-delay: 0.48s;
+  -o-animation-delay: 0.48s;
+  animation-delay: 0.48s;
+}
+#squaresWaveG_4 {
+  left: 6px;
+  -moz-animation-delay: 0.56s;
+  -webkit-animation-delay: 0.56s;
+  -ms-animation-delay: 0.56s;
+  -o-animation-delay: 0.56s;
+  animation-delay: 0.56s;
+}
+#squaresWaveG_5 {
+  left: 8px;
+  -moz-animation-delay: 0.64s;
+  -webkit-animation-delay: 0.64s;
+  -ms-animation-delay: 0.64s;
+  -o-animation-delay: 0.64s;
+  animation-delay: 0.64s;
+}
+#squaresWaveG_6 {
+  left: 10px;
+  -moz-animation-delay: 0.72s;
+  -webkit-animation-delay: 0.72s;
+  -ms-animation-delay: 0.72s;
+  -o-animation-delay: 0.72s;
+  animation-delay: 0.72s;
+}
+#squaresWaveG_7 {
+  left: 12px;
+  -moz-animation-delay: 0.8s;
+  -webkit-animation-delay: 0.8s;
+  -ms-animation-delay: 0.8s;
+  -o-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+#squaresWaveG_8 {
+  left: 14px;
+  -moz-animation-delay: 0.88s;
+  -webkit-animation-delay: 0.88s;
+  -ms-animation-delay: 0.88s;
+  -o-animation-delay: 0.88s;
+  animation-delay: 0.88s;
+}
+#squaresWaveG_9 {
+  left: 16px;
+  -moz-animation-delay: 0.96s;
+  -webkit-animation-delay: 0.96s;
+  -ms-animation-delay: 0.96s;
+  -o-animation-delay: 0.96s;
+  animation-delay: 0.96s;
+}
+#squaresWaveG_10 {
+  left: 18px;
+  -moz-animation-delay: 1.04s;
+  -webkit-animation-delay: 1.04s;
+  -ms-animation-delay: 1.04s;
+  -o-animation-delay: 1.04s;
+  animation-delay: 1.04s;
+}
+@-moz-keyframes bounce_squaresWaveG {
+  0% {
+    background-color: #0b59e0;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+@-webkit-keyframes bounce_squaresWaveG {
+  0% {
+    background-color: #0b59e0;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+@-ms-keyframes bounce_squaresWaveG {
+  0% {
+    background-color: #0b59e0;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+@-o-keyframes bounce_squaresWaveG {
+  0% {
+    background-color: #0b59e0;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+@keyframes bounce_squaresWaveG {
+  0% {
+    background-color: #0b59e0;
+  }
+  100% {
+    background-color: #ffffff;
+  }
+}
+.aboutButton {
+  display: block;
+  width: 20px;
+  height: 21px;
+  line-height: 20px;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  color: #E3E3E3;
+  position: relative;
+}
+.aboutButton#infoButton::before {
+  background-image: url(../../img/main_toolbar/about/info-normal.png);
+  content: '';
+  width: 28px;
+  height: 39px;
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -12px;
+}
+.aboutButton#infoButton:hover::before {
+  background-image: url(../../img/main_toolbar/about/info-hovered.png);
+  content: '';
+  width: 28px;
+  height: 39px;
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -12px;
+}
+.aboutButton#infoButton:active::before {
+  background-image: url(../../img/main_toolbar/about/info-down.png);
+  content: '';
+  width: 28px;
+  height: 39px;
+  display: block;
+  position: relative;
+  left: -1px;
+  top: -12px;
+}
+.aboutButton#helpButton::before {
+  background-image: url(../../img/main_toolbar/about/help-normal.png);
+  content: '';
+  width: 32px;
+  height: 39px;
+  display: block;
+  position: relative;
+  left: -3px;
+  top: -8px;
+}
+.aboutButton#helpButton:hover::before {
+  background-image: url(../../img/main_toolbar/about/help-hovered.png);
+  content: '';
+  width: 32px;
+  height: 39px;
+  display: block;
+  position: relative;
+  left: -3px;
+  top: -8px;
+}
+.aboutButton#helpButton:active::before {
+  background-image: url(../../img/main_toolbar/about/help-down.png);
+  content: '';
+  width: 32px;
+  height: 39px;
+  display: block;
+  position: relative;
+  left: -3px;
+  top: -8px;
+}
+.aboutButton#settingsButton::before {
+  background-image: url(../../img/main_toolbar/about/options-normal.png);
+  content: '';
+  width: 38px;
+  height: 38px;
+  display: block;
+  position: relative;
+  left: -6px;
+  top: -5px;
+}
+.aboutButton#settingsButton:hover::before {
+  background-image: url(../../img/main_toolbar/about/options-hovered.png);
+  content: '';
+  width: 38px;
+  height: 38px;
+  display: block;
+  position: relative;
+  left: -6px;
+  top: -5px;
+}
+.aboutButton#settingsButton:active::before {
+  background-image: url(../../img/main_toolbar/about/options-down.png);
+  content: '';
+  width: 38px;
+  height: 38px;
+  display: block;
+  position: relative;
+  left: -6px;
+  top: -5px;
+}
+.actionButton {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border: 1px solid #292929;
+  border-radius: 3px;
+  margin: 2px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  color: #E3E3E3;
+  padding: 0;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  font: 14px/18px "Helvetica Neue", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+.actionButton.actionLink {
+  -webkit-user-drag: element;
+}
+.actionButton {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 1px 1px rgba(0, 0, 0, 0.35);
+}
+.actionButton:active {
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.35), 0 1px 1px rgba(255, 255, 255, 0.06);
+}
+.actionButton {
+  background: #cccccc;
+  background: -webkit-linear-gradient(top, #cccccc 0%, #b3b3b3 100%);
+}
+.actionButton:hover {
+  background: #ededed;
+  background: -webkit-linear-gradient(top, #ededed 0%, #d4d4d4 100%);
+}
+.actionButton.actionLink {
+  background: #2b7cab;
+  background: -webkit-linear-gradient(top, #2b7cab 0%, #28739f 100%);
+}
+.actionButton.actionLink:hover {
+  background: #3291c8;
+  background: -webkit-linear-gradient(top, #3291c8 0%, #2f88bc 100%);
+}
+.actionButton:active {
+  background: #b3b3b3;
+  background: -webkit-linear-gradient(top, #b3b3b3 0%, #cccccc 100%);
+}
+.actionButton.actionLink:active {
+  background: #28739f;
+  background: -webkit-linear-gradient(top, #28739f 0%, #2b7cab 100%);
+}
+.mainToolbarContainer {
+  background-color: transparent;
+  opacity: 0.4;
+  -webkit-transition: opacity 0.5s ease 0s;
+  white-space: nowrap;
+}
+.mainToolbarContainer:hover {
+  background: -webkit-linear-gradient(top, rgba(266, 265, 265, 0.196875) 0%, rgba(266, 265, 265, 0.14) 100%), url(../img/backgrounds/black-Linen.png);
+  background-color: rgba(266, 265, 265, 0.196875);
+  opacity: 1;
+}
+.mainToolbarContainer .actionButton {
+  opacity: 0.17;
+  -webkit-transition: opacity 0.5s ease 0s;
+}
+.mainToolbarContainer:hover .actionButton {
+  opacity: 1;
+}
+.actionLink#newWindowActionLink::before {
+  background-image: url(../../img/main_toolbar/new_window.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionLink#newTextNodeActionLink::before {
+  background-image: url(../../img/main_toolbar/new_text_node.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionLink#newSeparatorNodeActionLink::before {
+  background-image: url(../../img/main_toolbar/new_separator_node.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionLink#newGroupNodeActionLink::before {
+  background-image: url(../../img/main_toolbar/new_group.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionLink#newTreeNodeActionLink::before {
+  background-image: url(../../img/main_toolbar/new_tree_node.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionLink#newGoogleDocNodeActionLink::before {
+  background-image: url(../../img/main_toolbar/new_google_doc_node.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#cloneViewButton::before {
+  background-image: url(../../img/main_toolbar/dolly2.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#undoScrollButton::before {
+  background-image: url(../../img/main_toolbar/undo_scroll.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#nextOpenWindowButton::before {
+  background-image: url(../../img/main_toolbar/up_to_next_open_window.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#groupOpenWindowsButton::before {
+  background-image: url(../../img/main_toolbar/group_all_open.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#savecloseAllWindowsButton::before {
+  background-image: url(../../img/main_toolbar/close_save_all.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#undoDeleteButton::before {
+  background-image: url(../../img/main_toolbar/recycle_bin.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#expandAllButton::before {
+  background-image: url(../../img/main_toolbar/expand_all.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#undoExpandAllButton::before {
+  background-image: url(../../img/main_toolbar/undo_expand_all.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.actionButton#backupNowButton::before {
+  background-image: url(../../img/main_toolbar/backup_now.png);
+  content: '';
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hidden {
+  display: none;
+}
+.face {
+  /*-webkit-perspective: -5000;*/
+
+  /*-webkit-transform-style: preserve-3d;*/
+
+  /*-webkit-backface-visibility: hidden;*/
+
+}
+.flipOut {
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: flipOut;
+}
+.flipIn {
+  -webkit-animation-duration: 0.2s;
+  -webkit-animation-name: flipIn;
+}
+@-webkit-keyframes flipOut {
+  from {
+    -webkit-transform: rotatey(0deg);
+  }
+  to {
+    -webkit-transform: rotatey(90deg);
+  }
+}
+@-webkit-keyframes flipIn {
+  from {
+    -webkit-transform: rotatey(90deg);
+  }
+  to {
+    -webkit-transform: rotatey(0deg);
+  }
+}
+#helpBlock {
+  display: block;
+  min-width: 800px;
+  border: 2px dashed #4393D1;
+  border-radius: 8px;
+  padding: 25px 31px;
+  padding-bottom: 21px;
+  margin: 30px;
+  background: url(../img/backgrounds/wavecut.png);
+  color: #201E1D;
+  font-size: 4.2mm;
+}
+#helpBlock .help_block_expandable_section_body {
+  overflow: hidden;
+  display: block;
+}
+#helpBlock .block_body_collapsed {
+  height: 0px;
+  -webkit-transition: height 0.4s;
+}
+#helpBlock .block_body_expanded {
+  height: auto;
+}
+#helpBlock .expandable-block-title {
+  cursor: pointer;
+}
+#helpBlock .expandable-block-title {
+  border-bottom: 1px #7099B9 dashed;
+}
+#helpBlock .expandable-block-title:hover {
+  border-bottom-color: #52b2ff;
+}
+#helpBlock h3.expandable-block-title {
+  display: inline-block;
+}
+#helpBlock h3.expandable-block-title,
+#helpBlock h3.expandable-block-title:hover {
+  border-bottom-width: 2px;
+}
+#helpBlock .remark,
+#helpBlock .answer {
+  border-left: 3px solid #5e8445;
+  margin-left: 7px;
+  padding-left: 8px;
+  margin-top: 6px;
+}
+#helpBlock a {
+  color: #1347A3;
+}
+#helpBlock p {
+  margin-top: 10px;
+}
+#helpBlock h3 {
+  margin-bottom: 4px;
+}
+#helpBlock hr {
+  margin-bottom: 9px;
+  margin-top: 9px;
+  background: url('../../img/backgrounds/border_bg.png') left bottom repeat-x;
+  height: 10px;
+}
+#helpBlock a {
+  text-decoration: underline;
+}
+#helpBlock li {
+  list-style-type: disc;
+  list-style-position: outside;
+  display: list-item;
+  padding: 4px;
+  margin-left: 30px;
+  margin-bottom: 2px;
+}
+#helpBlock li.tip {
+  list-style-type: none;
+  list-style-position: outside;
+  display: list-item;
+  padding: 4px;
+  margin-left: 0px;
+  margin-bottom: 13px;
+  min-height: 40px;
+  clear: both;
+}
+#helpBlock .tipimg {
+  display: block;
+  float: left;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+}
+#helpBlock .tipimgbtn {
+  padding-top: 3px;
+  padding-left: 3px;
+}
+#helpBlock .tiptext {
+  display: block;
+  margin-left: 48px;
+}
+#helpBlock .hide-btn {
+  color: white;
+  border: 1px solid #00585C;
+  border-radius: 5px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.15000000000000002);
+  background: #00949A;
+  position: relative;
+  display: inline-block;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 21px;
+}
+#helpBlock .hide-btn:hover {
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.35000000000000003);
+  background: #00979e;
+}
+#helpBlock .hide-btn:active {
+  box-shadow: none;
+  background: #009ca3;
+}
+@media print {
+  #helpBlock {
+    min-width: 0px;
+    margin: 0;
+    border: 0px none;
+  }
+  #helpBlock hr {
+    background: none;
+    height: 10px;
+  }
+  #helpBlock .hideInPrintFriendly {
+    display: none;
+  }
+  #helpBlock .block_body_collapsed {
+    height: auto;
+  }
+}
+/* Modal Edit - BEG -------------------------------------------------------------------------------------------------- */
+.modal-bg {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  /*background: rgba(190, 81, 81, 0.1);*/
+
+  z-index: 95;
+  /*чтоб выше hovering menu и main toolbar*/
+
+}
+.modal {
+  position: fixed;
+  left: 10px;
+  right: 10px;
+  top: 50%;
+  margin-top: -75px;
+  background: #F6F5F3;
+  /*F9F2EB;*/
+
+  border-radius: 2px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.45);
+  border: 1px solid #929AB4;
+  z-index: 100;
+  /*чтоб выше hovering menu*/
+
+}
+.modal .form_input[type="text"] {
+  border: solid 1px #b8b9b9;
+  padding: 4px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+}
+/*
+.modal .form_input[type="text"]:focus {
+   border: solid 1px rgb(131, 160, 252);
+
+}
+*/
+.modal .form_btn {
+  /* background: #d3d3d3; */
+
+  border: solid 1px #b8b9b9;
+  box-shadow: 0px 1px 1px rgba(50, 50, 50, 0.25);
+  border-radius: 2px;
+  width: 71px;
+  height: 27px;
+  text-align: center;
+  vertical-align: middle;
+  float: right;
+  margin-left: 10px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: #424242;
+  background: #f0f0f0;
+}
+.modal .btn_ok {
+  font-weight: bold;
+}
+.form_btn:hover {
+  background: #F5EAD6;
+}
+.form_btn:active {
+  background: #ddf0d9;
+}
+.form_btn:focus {
+  border: solid 1px #83a0fc;
+}
+/* Modal Edit - END -------------------------------------------------------------------------------------------------- */
+/* Context Menu - BEG -------------------------------------------------------------------------------------------------- */
+.contextMenu,
+.contextMenu-subMenuPopup,
+#noteGoProContextMenuWarningPopUp {
+  background: #FAFAFA;
+  /*F9F2EB;*/
+
+  color: black;
+  position: fixed;
+  width: 310px;
+  border-radius: 2px;
+  padding: 0px;
+  box-shadow: 0px 2px 5px rgba(50, 50, 50, 0.45);
+  border: 1px solid #929AB4;
+  font-size: 12px;
+  z-index: 100;
+  /*чтоб выше hovering menu*/
+
+}
+.contextMenu-subMenuPopup {
+  width: 270px;
+}
+#noteGoProContextMenuWarningPopUp {
+  position: absolute;
+  top: -104px;
+  left: -1px;
+}
+.goProAlertBlock {
+  white-space: normal;
+  margin: 4px;
+  color: #760A8A;
+  border: 1px dashed #AF350E;
+  font-size: 13px;
+  padding: 5px 9px;
+  border-radius: 2px;
+}
+.goProAlertBlock a {
+  color: #009fc7;
+  text-decoration: underline;
+}
+#proFeatureUsedInLiteModeAlert {
+  padding: 4px;
+}
+#proFeatureUsedInLiteModeAlert .goProAlertBlock {
+  padding: 8px 10px;
+}
+#proFeatureUsedInLiteModeAlert .form_btn {
+  margin-top: 10px;
+}
+.contextMenu-grp {
+  border-bottom: 1px solid lightgray;
+}
+.contextMenu-item {
+  display: block;
+  white-space: nowrap;
+  padding: 4px 0px 4px  0px;
+}
+.contextMenu-grpTitle {
+  margin-left: 20px;
+}
+.contextMenu-entryTitle {
+  margin-left: 30px;
+}
+.contextMenu-subMenuPopup .contextMenu-entryTitle {
+  margin-left: 20px;
+}
+.contextMenu-hoverable:hover {
+  background: #3672da;
+  background: -moz-linear-gradient(top, #3672da 0%, #388bf7 15%, #388bf7 85%, #3672da 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, #3672da), color-stop(15%, #388bf7), color-stop(85%, #388bf7), color-stop(100%, #3672da));
+  background: -webkit-linear-gradient(top, #3672da 0%, #388bf7 15%, #388bf7 85%, #3672da 100%);
+  background: -o-linear-gradient(top, #3672da 0%, #388bf7 15%, #388bf7 85%, #3672da 100%);
+  background: -ms-linear-gradient(top, #3672da 0%, #388bf7 15%, #388bf7 85%, #3672da 100%);
+  background: linear-gradient(to bottom, #3672da 0%, #388bf7 15%, #388bf7 85%, #3672da 100%);
+}
+.contextMenu-hoverable:active {
+  background: #1364CC;
+  background: linear-gradient(to bottom, #417ce0 0%, #1364cc 15%, #549dfc 85%, #2d73ec 100%);
+}
+.contextMenu-subsection:after {
+  content: "▸";
+  position: absolute;
+  right: 3px;
+  margin-top: -6px;
+  font-size: 22px;
+  font-family: arial;
+}
+.contextMenu-grpTitle {
+  font-weight: bold;
+}
+.contextMenu-grpTitle {
+  position: relative;
+}
+.contextMenu-grpTitle:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -3px;
+}
+.contextMenu-grpTitle:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: -3px;
+}
+.contextMenu-grpTitle:before {
+  top: 10px;
+  width: 1px;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#bebebe), to(transparent));
+  background-image: -webkit-linear-gradient(transparent, #bebebe);
+  background-image: -moz-linear-gradient(transparent, #bebebe);
+  background-image: -o-linear-gradient(transparent, #bebebe);
+}
+.contextMenu-grpTitle:after {
+  right: -1px;
+  height: 1px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#bebebe), to(transparent));
+  background-image: -webkit-linear-gradient(left, #bebebe, transparent);
+  background-image: -moz-linear-gradient(left, #bebebe, transparent);
+  background-image: -o-linear-gradient(left, #bebebe, transparent);
+}
+.contextMenu-entryTitle {
+  display: inline-block;
+}
+.contextMenu-entryShortcuts {
+  position: absolute;
+  display: inline-table;
+  right: 20px;
+  color: #adadad;
+  font-size: 11px;
+}
+.contextMenu-tip > .contextMenu-entryTitle {
+  margin-right: 20px;
+  display: inline-table;
+  color: #646B65;
+  border: 1px dashed #c6dac6;
+  font-size: 11px;
+  padding: 5px 9px;
+}
+.mouseKey {
+  color: dimgray;
+  margin-left: 1px;
+  margin-right: 0px;
+  position: relative;
+  top: 1px;
+}
+.shortCutKey {
+  border: 1px solid #ebebeb;
+  background-color: white;
+  color: dimgray;
+  padding: 0px 5px 1px 6px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 0px #dbd9d9;
+  margin-left: -1px;
+  margin-right: 1px;
+}
+.contextMenu-tip {
+  white-space: normal;
+}
+/* Context Menu - END -------------------------------------------------------------------------------------------------- */
+/* Accelerate Tree Rendering by Placing Tree List in own GPU accelerated Layer*/
+/*.sessionNTASC {*/
+/*-webkit-transform: translateZ(0px); //попробовать 0 кстате и убедится что жолтый прямоугольник есть - таки есть*/
+/*}*/
+@media print {
+  .mainToolbarContainer {
+    display: none;
+  }
+  .contextMenu,
+  .contextMenu-subMenuPopup {
+    display: none;
+  }
+  #scrollToLastNodeCompensator {
+    display: none;
+  }
+}
